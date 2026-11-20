@@ -1,0 +1,19 @@
+{
+  "outer": "CX2_38",
+  "inner_batteries": [
+    "CX2_36",
+    "CX2_37"
+  ],
+  "epochs": 5,
+  "search_stage": "raw_curve_cnn",
+  "dataset": "fc640b61afcb728da3258e4a1951a78557cd6feab1bbe3b78eb377b44cfe0488",
+  "sampler": "TPESampler(seed=42)",
+  "pruner": "MedianPruner_at_equivalent_completed_inner_fold_count",
+  "requested_trials": 2,
+  "final_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "status": "bounded_nested_CNN_pilot_not_full_all_model_study"
+}

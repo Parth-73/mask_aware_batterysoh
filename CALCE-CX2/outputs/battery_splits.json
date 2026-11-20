@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "policy": "A priori identifier-based split; conventional eligible cycles only for selection.",
+  "splits": {
+    "train": [
+      "CX2_16",
+      "CX2_33",
+      "CX2_34",
+      "CX2_{35",
+      "CX2_36"
+    ],
+    "validation": [
+      "CX2_37"
+    ],
+    "test": [
+      "CX2_38"
+    ],
+    "protocol_holdout": [
+      "CX2_3",
+      "CX2_8",
+      "CX2_32"
+    ],
+    "unresolved_text_sessions": [
+      "CX2_4",
+      "CX2_31"
+    ]
+  }
+}

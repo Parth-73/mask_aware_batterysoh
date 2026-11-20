@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "pdf_sha256": "ec3595801fd11d382aafb92fd69f35f138eafc780e0ec9fadd8f0cb3087d9066",
+  "pdf_pages": 21,
+  "checked_saved_checkpoints": [
+    {
+      "run_id": "B2_F1_L5_seed42",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    },
+    {
+      "run_id": "B2_F1_L5_seed123",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    },
+    {
+      "run_id": "B2_F1_L5_seed2026",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    }
+  ],
+  "protected_artifact_count": 223,
+  "protected_artifacts_changed": [],
+  "training_scientific_code_unchanged": true,
+  "frozen_selection_unchanged": true,
+  "model_retraining": false,
+  "model_forward_calls": false,
+  "test_reevaluation": false,
+  "report_generator_and_notebook_syntax": "passed"
+}

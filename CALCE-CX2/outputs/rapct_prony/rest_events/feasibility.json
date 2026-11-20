@@ -1,0 +1,87 @@
+{
+  "verified_events": 36005,
+  "uncertain_gaps": 12450,
+  "per_battery": {
+    "CX2_16": 6012,
+    "CX2_33": 5050,
+    "CX2_34": 5190,
+    "CX2_35": 5462,
+    "CX2_36": 5899,
+    "CX2_37": 3814,
+    "CX2_38": 4578
+  },
+  "duration_quantiles_s": {
+    "0.0": 1.0,
+    "0.25": 5.0,
+    "0.5": 90.0,
+    "0.75": 125.0,
+    "0.95": 125.0,
+    "1.0": 235.0
+  },
+  "validated_pairs": 23107,
+  "consistent_conditions": 22824,
+  "usable_pair_events": 22824,
+  "unique_target_cycles": 11333,
+  "usable_batteries": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_36",
+    "CX2_37",
+    "CX2_38"
+  ],
+  "long_verified_events_gt_1h": 0,
+  "recovery_training_status": "unavailable_under_conservative_gap_policy_zero_usable_persistent_state_transitions",
+  "matched_curve_state_support": [
+    {
+      "battery": "CX2_16",
+      "samples": 1899,
+      "with_verified_rest": 1899,
+      "unknown_gaps": 1899,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_33",
+      "samples": 1488,
+      "with_verified_rest": 1488,
+      "unknown_gaps": 1488,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_34",
+      "samples": 1554,
+      "with_verified_rest": 1554,
+      "unknown_gaps": 1554,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_35",
+      "samples": 1630,
+      "with_verified_rest": 1630,
+      "unknown_gaps": 1630,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_36",
+      "samples": 1743,
+      "with_verified_rest": 1743,
+      "unknown_gaps": 1743,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_37",
+      "samples": 1219,
+      "with_verified_rest": 1219,
+      "unknown_gaps": 1219,
+      "usable_state_transitions": 0
+    },
+    {
+      "battery": "CX2_38",
+      "samples": 1477,
+      "with_verified_rest": 1477,
+      "unknown_gaps": 1477,
+      "usable_state_transitions": 0
+    }
+  ]
+}

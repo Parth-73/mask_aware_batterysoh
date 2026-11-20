@@ -1,0 +1,7 @@
+model,variant,selected_seed,validation_score,checkpoint,lambda_mono,lambda_bound
+ols_last_CC_CV,physics_gwo,42,0.010120542478611565,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\ols_last_CC_CV_physics_gwo.joblib,0.0,0.0
+ols_last_CC_CV,baseline,42,0.010120542478611565,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\ols_last_CC_CV_baseline.joblib,0.0,0.0
+time_transformer,baseline,123,0.012611191471364356,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\time_transformer_baseline_seed123.pt,0.0,0.0
+direct_transformer,physics_gwo,42,0.014344530439631091,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\direct_transformer_physics_gwo_seed42.pt,2.0,0.9679457106988417
+direct_transformer,baseline,42,0.014555228058786222,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\direct_transformer_baseline_seed42.pt,0.0,0.0
+time_transformer,physics_gwo,123,0.015663173991202716,C:\Projects\Battery_Soh\pre processed ready to use data\gwo_physics_three_models\full\checkpoints\time_transformer_physics_gwo_seed123.pt,0.8604529164837147,0.7974263236901743

@@ -1,0 +1,53 @@
+{
+  "config": {
+    "nominal_capacity_ah": 1.35,
+    "active_current_a": 0.02,
+    "max_sample_gap_s": 180.0,
+    "max_cv_sample_gap_s": 3600.0,
+    "max_rest_gap_s": 3600.0,
+    "capacity_agreement_relative": 0.05,
+    "capacity_agreement_absolute_ah": 0.01,
+    "charge_voltage_v": 4.18,
+    "termination_current_a": 0.06,
+    "discharge_cutoff_v": 2.75,
+    "conventional_crate_min": 0.3,
+    "conventional_crate_max": 1.1,
+    "conventional_peak_crate_max": 1.2,
+    "voltage_grid_v": 0.002,
+    "ic_interval_low_v": 3.8,
+    "ic_interval_high_v": 4.15,
+    "smoothing_windows": [
+      7,
+      11,
+      15
+    ],
+    "seed": 42
+  },
+  "python": "3.12.2",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5",
+    "tqdm": "4.70.1"
+  },
+  "code_sha256": "70bb48d9d00de5608fe950f5b0b3e747265eb921f7e02701e7ce76284c7ce214",
+  "raw_files": 745,
+  "batteries_inventoried": 12,
+  "batteries_reconstructed": 10,
+  "candidates": 25985,
+  "validated_complete": 15822,
+  "conventional_validated": 13736,
+  "f4": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "no_models_trained": true,
+  "resumed_from_checkpoint": true,
+  "checkpoint_sha256": "2f8dae4e8cc04d2d55d01b0c28e4b1c6e7783a1524a10b700072b28324f1cfd2"
+}

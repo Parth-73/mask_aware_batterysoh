@@ -1,0 +1,10 @@
+fold,heldout,kind,seed,validation_score,best_epoch
+fixed_CX2_38,CX2_38,clean_transformer,42,0.05425723890463511,3
+fixed_CX2_38,CX2_38,clean_transformer,123,0.058343589305877686,4
+fixed_CX2_38,CX2_38,clean_transformer,2026,0.04786474568148454,3
+fixed_CX2_38,CX2_38,masked_transformer,42,0.019384870305657387,29
+fixed_CX2_38,CX2_38,masked_transformer,123,0.020878939578930538,29
+fixed_CX2_38,CX2_38,masked_transformer,2026,0.016610457251469295,35
+fixed_CX2_38,CX2_38,aido_consistency,42,0.01999875344336033,26
+fixed_CX2_38,CX2_38,aido_consistency,123,0.021081856451928616,30
+fixed_CX2_38,CX2_38,aido_consistency,2026,0.01889018186678489,30

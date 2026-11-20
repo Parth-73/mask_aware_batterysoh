@@ -1,0 +1,49 @@
+{
+  "fold": "fixed_CX2_38",
+  "gwo_weights": {
+    "mono": 2.0,
+    "smooth": 0.05007779087826728
+  },
+  "adam_pinn_weights": {
+    "mono": 0.2,
+    "smooth": 0.05
+  },
+  "feature_order": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "feature_means": [
+    4298.060418734318,
+    4122.049626362393,
+    1.3696248925710997,
+    3.9417016905071365,
+    0.12537655799860806
+  ],
+  "feature_stds": [
+    902.5775863506382,
+    638.8938261484406,
+    1.0761168301389503,
+    0.03672521886460232,
+    0.019442173592708147
+  ],
+  "dt_scale_hours": 3.8755555555555556,
+  "training_rows": 7690,
+  "validation_rows": 1743,
+  "test_rows": 1477,
+  "train_cells": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_37"
+  ],
+  "validation_cells": [
+    "CX2_36"
+  ],
+  "test_cells": [
+    "CX2_38"
+  ]
+}

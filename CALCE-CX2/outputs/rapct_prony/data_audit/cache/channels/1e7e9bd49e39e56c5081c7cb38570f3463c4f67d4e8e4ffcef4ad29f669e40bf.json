@@ -1,0 +1,23 @@
+{
+  "version": "cx2-v1",
+  "source_file": "CX2_33/CX2_33/CX2_33_9_7_10.xlsx",
+  "rows": [
+    {
+      "battery": "CX2_33",
+      "source_file": "CX2_33/CX2_33/CX2_33_9_7_10.xlsx",
+      "bytes": 1559368,
+      "sheet": "Channel_1-012",
+      "sha256": "8c8d8b4f2d0e31d007d34b1052163de6509fc077cebcae6747b8ac5aced1f0a6",
+      "cache": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\data_audit\\cache\\channels\\1e7e9bd49e39e56c5081c7cb38570f3463c4f67d4e8e4ffcef4ad29f669e40bf_c48041d8.pkl",
+      "rows": 9839,
+      "start": "2010-09-02 14:35:40",
+      "end": "2010-09-06 16:51:39",
+      "missing_timestamps": 0,
+      "source_timestamp_reversals": 0,
+      "local_cycle_resets": 0,
+      "test_time_resets": 0,
+      "status": "ready",
+      "columns": "timestamp;test_s;step_s;step;local_cycle;current;voltage;charge_counter;discharge_counter;resistance;battery;source;source_row"
+    }
+  ]
+}

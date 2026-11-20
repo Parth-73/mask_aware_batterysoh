@@ -1,0 +1,8 @@
+split,battery,rows
+test,CX2_38,1477
+train,CX2_16,1899
+train,CX2_33,1488
+train,CX2_34,1554
+train,CX2_35,1630
+train,CX2_37,1219
+validation,CX2_36,1743

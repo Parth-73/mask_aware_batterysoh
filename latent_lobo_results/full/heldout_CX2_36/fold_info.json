@@ -1,0 +1,17 @@
+{
+  "heldout": "CX2_36",
+  "validation": "CX2_37",
+  "train": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_38"
+  ],
+  "source_train_rows": 8048,
+  "filtered_train_rows": 7946,
+  "removed_training_rows": 102,
+  "train_windows": 3677,
+  "val_windows": 671,
+  "test_windows": 861
+}

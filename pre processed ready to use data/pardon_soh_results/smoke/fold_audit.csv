@@ -1,0 +1,2 @@
+fold,train_rows,train_windows,val_windows,test_windows,excluded_train_rows,heldout
+fixed_CX2_38,7690,20624,4860,4089,100,CX2_38

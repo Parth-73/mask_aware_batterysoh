@@ -1,0 +1,21 @@
+{
+  "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\parth\\anaconda3\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "torch": "2.11.0+cu128",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "tqdm": "4.68.2",
+    "openpyxl": "3.1.5",
+    "joblib": "1.5.3",
+    "pytest": "9.0.3"
+  },
+  "cublas_workspace": ":4096:8",
+  "precision": "float32; AMP disabled",
+  "threads": 2
+}

@@ -1,0 +1,25 @@
+{
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "train_name": "train_final_filtered.csv",
+  "lookback": 12,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "gap_threshold_hours": 24.0,
+  "dt_training_median_hours": 3.8841666666666668,
+  "mode": "full",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "note": "time gaps do not imply rest; horizon is in cycle offsets"
+}

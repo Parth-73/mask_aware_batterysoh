@@ -1,0 +1,18 @@
+{
+  "status": "executed",
+  "lags": 4,
+  "masked_lags": [
+    1,
+    2
+  ],
+  "input_features": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "training": "Complete and masked-history augmentation; identical windows and masks across Ridge/HGB",
+  "window_rule": "Within source, no missing raw episode indices or unsupported continuity segment; all four preceding observation identities must exist",
+  "interpretation": "Acquisition dropout of historical feature vectors; not physical partial-charge invariance"
+}

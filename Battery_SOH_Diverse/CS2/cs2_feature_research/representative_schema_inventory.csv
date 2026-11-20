@@ -1,0 +1,11 @@
+path,battery,sheet,status,header_row,mapping
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_33\CS2_33\CS2_33_10_04_10.xlsx,CS2_33,Info,metadata,,
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_33\CS2_33\CS2_33_10_04_10.xlsx,CS2_33,Channel_1-006,raw,0.0,"{""t"": ""Test_Time(s)"", ""v"": ""Voltage(V)"", ""i"": ""Current(A)"", ""cycle"": ""Cycle_Index"", ""step"": ""Step_Index"", ""step_t"": ""Step_Time(s)"", ""stamp"": ""Date_Time"", ""qd"": ""Discharge_Capacity(Ah)"", ""qc"": ""Charge_Capacity(Ah)""}"
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_34\CS2_34\CS2_34_10_04_10.xlsx,CS2_34,Info,metadata,,
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_34\CS2_34\CS2_34_10_04_10.xlsx,CS2_34,Channel_1-007,raw,0.0,"{""t"": ""Test_Time(s)"", ""v"": ""Voltage(V)"", ""i"": ""Current(A)"", ""cycle"": ""Cycle_Index"", ""step"": ""Step_Index"", ""step_t"": ""Step_Time(s)"", ""stamp"": ""Date_Time"", ""qd"": ""Discharge_Capacity(Ah)"", ""qc"": ""Charge_Capacity(Ah)""}"
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_3\CS2_3\CS2_3_10_04_12.xlsx,CS2_3,Info,metadata,,
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_3\CS2_3\CS2_3_10_04_12.xlsx,CS2_3,Channel_1-008_1,raw,0.0,"{""t"": ""Test_Time(s)"", ""v"": ""Voltage(V)"", ""i"": ""Current(A)"", ""cycle"": ""Cycle_Index"", ""step"": ""Step_Index"", ""step_t"": ""Step_Time(s)"", ""stamp"": ""Date_Time"", ""qd"": ""Discharge_Capacity(Ah)"", ""qc"": ""Charge_Capacity(Ah)""}"
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_3\CS2_3\CS2_3_10_04_12.xlsx,CS2_3,Channel_1-008_2,raw,0.0,"{""t"": ""Test_Time(s)"", ""v"": ""Voltage(V)"", ""i"": ""Current(A)"", ""cycle"": ""Cycle_Index"", ""step"": ""Step_Index"", ""step_t"": ""Step_Time(s)"", ""stamp"": ""Date_Time"", ""qd"": ""Discharge_Capacity(Ah)"", ""qc"": ""Charge_Capacity(Ah)""}"
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_3\CS2_3\CS2_3_10_04_12.xlsx,CS2_3,Statistics_1-008,statistics_excluded,,
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_5\CS2_5\CS2_5_10_01_12.xlsx,CS2_5,Info,metadata,,
+C:\Projects\Battery_SOH_Diverse\CS2\CS2_5\CS2_5\CS2_5_10_01_12.xlsx,CS2_5,Channel_1-001,raw,0.0,"{""t"": ""Test_Time(s)"", ""v"": ""Voltage(V)"", ""i"": ""Current(A)"", ""cycle"": ""Cycle_Index"", ""step"": ""Step_Index"", ""step_t"": ""Step_Time(s)"", ""stamp"": ""Date_Time"", ""qd"": ""Discharge_Capacity(Ah)"", ""qc"": ""Charge_Capacity(Ah)""}"

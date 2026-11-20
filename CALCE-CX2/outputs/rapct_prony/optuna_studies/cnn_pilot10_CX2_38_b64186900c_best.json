@@ -1,0 +1,28 @@
+{
+  "study": "cnn_pilot10_CX2_38_b64186900c",
+  "best_trial": 1,
+  "inner_battery_macro_rmse": 0.0174526892753887,
+  "parameters": {
+    "channels": 16,
+    "lr": 0.0007348118405270452
+  },
+  "refit_epochs": 4,
+  "epoch_policy": "median_best_epoch_across_inner_batteries",
+  "scope": {
+    "outer": "CX2_38",
+    "inner_batteries": [
+      "CX2_36",
+      "CX2_37"
+    ],
+    "epochs": 5,
+    "search_stage": "raw_curve_cnn",
+    "dataset": "fc640b61afcb728da3258e4a1951a78557cd6feab1bbe3b78eb377b44cfe0488"
+  },
+  "outer_selection_used": false,
+  "universal_optimum_claim": false,
+  "refit_runs": [
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_0b605712b698",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_143930e71344",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_7528b86ecdb8"
+  ]
+}

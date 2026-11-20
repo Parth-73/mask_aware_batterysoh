@@ -1,0 +1,10 @@
+{
+  "domain": "synthetic_only",
+  "true_tau_s": 80.0,
+  "fitted_tau_s": 80.00049591064453,
+  "validation_mse": 1.99559776526987e-15,
+  "epochs": 200,
+  "seed": 42,
+  "calibrated_battery_parameter": false,
+  "experimental_recovery_evidence": false
+}

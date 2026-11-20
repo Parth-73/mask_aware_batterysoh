@@ -1,0 +1,16 @@
+{
+  "penalty_minus_zero_rmse_percentage_points": {
+    "cnn_pinn": 0.007116703197411978,
+    "lstm_pinn": 0.011920791125995533
+  },
+  "feature_ablation_rmse_percentage_points": {
+    "five": 1.4559065866770942,
+    "nine": 1.314280529579752,
+    "three": 1.7730425977432283
+  },
+  "matched_sequence_rmse_percentage_points": {
+    "5": 1.9892171629272464,
+    "10": 2.112849734370098,
+    "20": 2.0872277570615743
+  }
+}

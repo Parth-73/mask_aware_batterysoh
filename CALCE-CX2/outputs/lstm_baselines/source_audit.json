@@ -1,0 +1,44 @@
+{
+  "source_files": {
+    "D:\\battery_soh\\CALCE-CX2\\outputs\\cx2_features_all.csv": "0c1b3fcb46c5c0e51bba0b1233e091e5d08d31ba42a997579662c3ee5a1d7fb1",
+    "D:\\battery_soh\\CALCE-CX2\\outputs\\cycle_quality.csv": "e5c79969c1e59124f1dc90a7fe70968d7f20267d0749c7af9ba6c65cc7c51663",
+    "D:\\battery_soh\\CALCE-CX2\\outputs\\rejected_cycles.csv": "d251e0c7049e39fbe20aa2cb7a2041f924cc334393311c4d9941687a65d4b3b7"
+  },
+  "soh_units": "fraction",
+  "nominal_capacity_ah": 1.35,
+  "selected_splits": {
+    "train": [
+      "CX2_16",
+      "CX2_33",
+      "CX2_34",
+      "CX2_35",
+      "CX2_37"
+    ],
+    "validation": [
+      "CX2_36"
+    ],
+    "test": [
+      "CX2_38"
+    ]
+  },
+  "features_exist": true,
+  "capacity_and_quality_agreement": true,
+  "no_discharge_inputs": true,
+  "smoothing_audit": "Per-charge Savitzky-Golay smoothing; no across-cycle smoothing. No historical feature columns in any benchmark feature set.",
+  "input_features": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq",
+    "ic_peak_area",
+    "ic_peak_voltage",
+    "ic_peak_width",
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak"
+  ],
+  "common_cohort": true,
+  "split_target_range_audit_training_only": {
+    "train_min": 0.4427468284979821,
+    "train_max": 1.0120995268472632
+  }
+}

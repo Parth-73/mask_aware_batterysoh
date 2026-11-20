@@ -1,0 +1,15 @@
+{
+  "finite_predictors_and_targets": true,
+  "unique_cycle_ids": true,
+  "target_matches_original_validated_capacity": true,
+  "raw_csv_roundtrip_exact": true,
+  "train_only_standardization_verified": true,
+  "battery_splits_disjoint": true,
+  "original_sources_unchanged": true,
+  "total_rows": 11010,
+  "split_rows": {
+    "train": 7790,
+    "validation": 1743,
+    "test": 1477
+  }
+}

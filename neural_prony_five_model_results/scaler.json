@@ -1,0 +1,25 @@
+{
+  "feature_order": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "mean": [
+    4298.060546875,
+    4122.04931640625,
+    1.3696249723434448,
+    3.941701650619507,
+    0.12537656724452972
+  ],
+  "std": [
+    902.5775756835938,
+    638.893798828125,
+    1.0761168003082275,
+    0.03672521933913231,
+    0.019442172721028328
+  ],
+  "fit_csv": "train_final_filtered.csv",
+  "note": "fit on filtered train only"
+}

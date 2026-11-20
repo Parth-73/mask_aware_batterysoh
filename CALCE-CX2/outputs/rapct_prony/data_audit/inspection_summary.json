@@ -1,0 +1,17 @@
+{
+  "raw_files": 745,
+  "selected_batteries": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_36",
+    "CX2_37",
+    "CX2_38"
+  ],
+  "statuses": {
+    "ready": 314,
+    "relative_time_only_counter_units_unverified": 16
+  },
+  "timestamp_policy": "Experimental Date_Time only; no filesystem-time or filename inference."
+}

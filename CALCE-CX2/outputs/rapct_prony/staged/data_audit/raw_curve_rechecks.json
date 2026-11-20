@@ -1,0 +1,51 @@
+[
+  {
+    "battery": "CX2_16",
+    "cycle_id": "CX2_16:00384",
+    "source": "CX2_16/CX2_16/CX2_16_5_9_11.xlsx::Channel_1-006",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2011-05-04 11:34:49"
+  },
+  {
+    "battery": "CX2_33",
+    "cycle_id": "CX2_33:00098",
+    "source": "CX2_33/CX2_33/CX2_33_9_27_10.xlsx::Channel_1-012",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-09-22 05:14:47"
+  },
+  {
+    "battery": "CX2_34",
+    "cycle_id": "CX2_34:00277",
+    "source": "CX2_34/CX2_34/CX2_34_10_26_10.xlsx::Channel_1-001",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-10-19 04:43:57"
+  },
+  {
+    "battery": "CX2_35",
+    "cycle_id": "CX2_35:00208",
+    "source": "CX2_35/CX2_35/CX2_35_10_18_10.xlsx::Channel_1-002",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-10-13 08:22:00"
+  },
+  {
+    "battery": "CX2_36",
+    "cycle_id": "CX2_36:00028",
+    "source": "CX2_36/CX2_36/CX2_36_8_30_10.xlsx::Channel_1-003",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-08-21 08:35:09"
+  },
+  {
+    "battery": "CX2_37",
+    "cycle_id": "CX2_37:00221",
+    "source": "CX2_37/CX2_37/CX2_37_10_01_10.xlsx::Channel_1-004",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-09-27 07:31:23"
+  },
+  {
+    "battery": "CX2_38",
+    "cycle_id": "CX2_38:00331",
+    "source": "CX2_38/CX2_38/CX2_38_10_22_10.xlsx::Channel_1-005",
+    "raw_reconstruction_and_curve_match": true,
+    "end_of_charge_cutoff": "2010-10-18 03:12:17"
+  }
+]

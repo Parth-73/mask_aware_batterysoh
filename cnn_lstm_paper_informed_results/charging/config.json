@@ -1,0 +1,23 @@
+{
+  "experiment": "charging",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs": 150,
+  "patience": 30,
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "sequence_length": 12,
+  "selection": "validation MSE only",
+  "outlier_filter": "none",
+  "prediction_cutoff": "charge end"
+}

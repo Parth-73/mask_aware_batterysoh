@@ -1,0 +1,74 @@
+Official source snapshot: https://github.com/yacinekhaldi/ViscoelasticVibrationVolterra/blob/39e8ae00b29b4570d7886a248869d94a7910bff3/ml_solver.py
+Source tree revision: 39e8ae00b29b4570d7886a248869d94a7910bff3
+Source blob SHA: 43f374626f341d91bc2d1edbb92209b3419faaea
+Excerpt: class NPSSL (original lines 267-312). Not executed by the battery implementation.
+
+    - Learnable nonnegative amplitudes a[m] via softplus.
+    - Causal state update produces H[n] from velocity v[n].
+    """
+    def __init__(self, prony_M: int, dt: float, tmin=None, tmax=None):
+        super().__init__()
+        self.M = prony_M
+        self.dt = dt
+        # set a broad log-spaced grid of b's; cover ~ [dt*5, 10s] by default
+        tmin = 5*dt if tmin is None else tmin
+        tmax = 10.0 if tmax is None else tmax
+        b = np.geomspace(1.0/tmax, 1.0/max(tmin, 1e-4), num=prony_M).astype(np.float32)
+        self.register_buffer("b_grid", torch.from_numpy(b))  # [M]
+        self.a_raw = nn.Parameter(torch.full((prony_M,), -2.0))  # start small (softplus ~0)
+        self.softplus = nn.Softplus()
+
+    def forward(self, v_seq: torch.Tensor):
+        """
+        v_seq: [B, W] velocity sequence (past window)
+        returns: H_seq [B, W], a_pred [B,M] (same a across time in this simple version)
+        """
+        B, W = v_seq.shape
+        a = self.softplus(self.a_raw)                      # [M] nonnegative
+        decay = torch.exp(-self.b_grid * self.dt)          # [M]
+        z = torch.zeros((B, self.M), device=v_seq.device)  # states
+
+        H = []
+        for n in range(W):
+            z = z * decay + a * (self.dt * v_seq[:, n:n+1])  # broadcasting a over batch
+            H.append(z.sum(dim=1, keepdim=True))
+        H_seq = torch.cat(H, dim=1)  # [B, W]
+        a_pred = a.unsqueeze(0).repeat(B, 1)  # [B,M]
+        return H_seq, a_pred
+
+    # For analysis/plots
+    def kernel_curve(self, t_grid: np.ndarray) -> np.ndarray:
+        with torch.no_grad():
+            a = self.softplus(self.a_raw).detach().cpu().numpy()  # [M]
+            b = self.b_grid.detach().cpu().numpy()
+            K = np.exp(-np.outer(t_grid, b)) @ a
+            return K
+
+class GRUForecaster(nn.Module):
+    """Pure-ML baseline forecaster (no NPSSL). Uses [f,u,v,a,H] to predict next H steps of u."""
+    def __init__(self, in_feats: int, hidden: int, horizon: int, num_layers: int = 1):
+        super().__init__()
+        self.gru = nn.GRU(input_size=in_feats, hidden_size=hidden, num_layers=num_layers, batch_first=True)
+
+MIT License
+
+Copyright (c) 2026 yacinekhaldi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+

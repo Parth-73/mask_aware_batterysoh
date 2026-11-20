@@ -1,0 +1,6 @@
+feature,group,units,definition,raw_measurements,phase,reliability_rule
+cc_duration_s,F2,s,Sum observed step duration for voltage <4.18 V charge samples,"current,test_s,step_s,voltage",CC,No recording gaps or mid-step starts
+cv_duration_s,F2,s,Sum observed durations at voltage >=4.18 V with decaying current,"current,test_s,step_s,voltage",CV,CV voltage range <=0.035 V and current decrease >=20%
+dva_peak,F2,V/Ah,Maximum smoothed dV/dQ over same partial-capacity grid,"current,time,voltage",CC,Positive capacity span and reliable curve
+ic_peak_voltage,F2,V,"Voltage at largest interior IC peak in [3.80,4.15] V","current,time,voltage",CC,Interior peak and reliable IC curve required
+ic_peak_width,F2,V,Width of largest interior peak at half prominence,"current,time,voltage",CC,Interior peak with prominence >=5% height and bounded flanks

@@ -1,0 +1,25 @@
+{
+  "five": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "three": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq"
+  ],
+  "nine": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq",
+    "ic_peak_area",
+    "ic_peak_voltage",
+    "ic_peak_width",
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak"
+  ]
+}

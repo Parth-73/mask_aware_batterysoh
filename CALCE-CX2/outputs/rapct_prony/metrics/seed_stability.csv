@@ -1,0 +1,10 @@
+protocol,study,battery,seed_count,rmse_fraction_mean,rmse_fraction_sample_std
+nested_CNN_pilot,cnn_nested_CX2_38_b64186900c,CX2_38,3,0.011289070326735666,0.002806484962515623
+nested_CNN_pilot,cnn_pilot10_CX2_38_b64186900c,CX2_38,3,0.011289070326735666,0.002806484962515623
+primary_single_seed_pilot,cnn_27d90c1b89da,CX2_38,1,0.0122749992283701,
+primary_single_seed_pilot,fusion_1779a8d18fc6,CX2_38,1,0.0147778495607588,
+primary_single_seed_pilot,mlp_031601885824,CX2_38,1,0.0143205160527071,
+primary_single_seed_pilot,physics_guided_f10a5595471a,CX2_38,1,0.0208613606961386,
+primary_single_seed_pilot,physics_zero_fc1a3db8c08a,CX2_38,1,0.0208027261253916,
+primary_single_seed_pilot,transformer_frozen_5ced16619124,CX2_38,1,0.0136162736897532,
+primary_single_seed_pilot,transformer_joint_b837fd75ec74,CX2_38,1,0.0189542445348852,

@@ -1,0 +1,6 @@
+rank,feature,selection,generalization_status
+1,cc_throughput_ah,training-only mRMR shortlist + inner battery-held-out sequential forward selection,provisional: did not beat charging/persistence baselines on untouched test cells
+2,throughput_bracket_3p9_4p1_ah,training-only mRMR shortlist + inner battery-held-out sequential forward selection,provisional: did not beat charging/persistence baselines on untouched test cells
+3,cc_voltage_increase_v,training-only mRMR shortlist + inner battery-held-out sequential forward selection,provisional: did not beat charging/persistence baselines on untouched test cells
+4,cc_voltage_slope_v_s,training-only mRMR shortlist + inner battery-held-out sequential forward selection,provisional: did not beat charging/persistence baselines on untouched test cells
+5,charge_voltage_mean_v,training-only mRMR shortlist + inner battery-held-out sequential forward selection,provisional: did not beat charging/persistence baselines on untouched test cells

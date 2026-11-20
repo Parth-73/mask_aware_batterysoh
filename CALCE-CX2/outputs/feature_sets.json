@@ -1,0 +1,70 @@
+{
+  "F1": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq"
+  ],
+  "F2": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq",
+    "ic_peak_voltage",
+    "ic_peak_area",
+    "ic_peak_width",
+    "dva_mean",
+    "dva_peak",
+    "partial_charge_time_s",
+    "cc_duration_s",
+    "cv_duration_s",
+    "cv_decay_rate_s_inv",
+    "cv_capacity_ah"
+  ],
+  "F3": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq",
+    "ic_peak_voltage",
+    "ic_peak_area",
+    "ic_peak_width",
+    "dva_mean",
+    "dva_peak",
+    "partial_charge_time_s",
+    "cc_duration_s",
+    "cv_duration_s",
+    "cv_decay_rate_s_inv",
+    "cv_capacity_ah",
+    "historical_ic_peak_shift_v",
+    "historical_partial_change_ah",
+    "charge_crate",
+    "charge_protocol_cv",
+    "relaxation_60s_v"
+  ],
+  "F4": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "unavailable_pending_measurement_verification": [
+    "resistance_ohm",
+    "historical_resistance_change_ohm",
+    "temperature_c"
+  ],
+  "F4_status": "provisional_training_statistics_only; validation-performance selection deferred because no models are allowed",
+  "baseline_status": "Operational three-feature baseline; exact Wang et al. study interval/smoothing not supplied or verified.",
+  "exclusions": [
+    "soh",
+    "soh_candidate",
+    "discharge_crate_median",
+    "discharge_crate_max",
+    "discharge_integral_ah",
+    "discharge_counter_ah",
+    "battery",
+    "lifetime_cycle",
+    "split"
+  ],
+  "missing_data_policy": "Physical measurements remain NaN. Any later learned imputer/scaler must fit training batteries only.",
+  "architecture_policy": "Use identical feature columns and temporal availability for all architectures; reshape only.",
+  "same_cycle_discharge_policy": "Audit only; an independently logged pre-charge scheduled protocol may be added in a future dataset version."
+}

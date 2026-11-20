@@ -1,0 +1,31 @@
+{
+  "data_dir": "C:\\Projects\\Battery_Soh\\pre processed ready to use data",
+  "train_csv": "train_final_filtered.csv",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "task": "current_cycle_SOH_estimation",
+  "seq_len": 12,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs": 80,
+  "patience": 12,
+  "batch_size": 128,
+  "lr": 0.001,
+  "xgb_estimators": 350,
+  "torch_device": "cuda",
+  "normalization": "training-only mean/std",
+  "matched_windows": true,
+  "run_feature_ablations": true,
+  "run_missingness_stress": true,
+  "run_filter_sensitivity": true,
+  "run_lobo": false,
+  "warning": "original test battery CX2_38 has been inspected in earlier experiments"
+}

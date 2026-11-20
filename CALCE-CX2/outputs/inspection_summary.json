@@ -1,0 +1,24 @@
+{
+  "raw_files": 745,
+  "selected_batteries": [
+    "CX2_16",
+    "CX2_3",
+    "CX2_31",
+    "CX2_32",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_36",
+    "CX2_37",
+    "CX2_38",
+    "CX2_4",
+    "CX2_8"
+  ],
+  "statuses": {
+    "ready": 457,
+    "relative_time_only_counter_units_unverified": 218,
+    "temperature_only_no_synchronized_current_session": 103,
+    "temperature_schema_error": 5
+  },
+  "timestamp_policy": "Experimental Date_Time only; no filesystem-time or filename inference."
+}

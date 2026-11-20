@@ -1,0 +1,16 @@
+{
+  "status": "executed",
+  "source_files": [
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_3\\CS2_3\\CS2_3_10_14_11.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_33\\CS2_33\\CS2_33_2_2_11.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_34\\CS2_34\\CS2_34_11_24_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_35\\CS2_35\\CS2_35_9_8_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_36\\CS2_36\\CS2_36_10_04_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_37\\CS2_37\\CS2_37_10_05_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_38\\CS2_38\\CS2_38_10_05_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_7\\CS2_7\\cs2_7_12_17_10.xlsx",
+    "C:\\Projects\\Battery_SOH_Diverse\\CS2\\CS2_9\\CS2_9\\CS2_9_7_26_12.xlsx"
+  ],
+  "n_rows": 460,
+  "scope": "One smallest eligible raw workbook per split battery; current-cycle estimation only; sample-prefix/suffix views re-extracted from measured samples; no claim of acquisition invariance"
+}

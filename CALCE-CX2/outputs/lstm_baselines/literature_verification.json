@@ -1,0 +1,271 @@
+{
+  "status": "verified_against_user_supplied_pdf",
+  "reference_title": "An Adaptive-Weight Physics-Informed Neural Network Optimized by Grey Wolf Optimizer for Lithium-Ion Battery State of Health Estimation",
+  "authors": [
+    "Runtong Wang",
+    "Jiakang Shen",
+    "Shupeng Liu",
+    "Hailin Rong"
+  ],
+  "doi": "10.3390/batteries12040115",
+  "primary_url": "https://www.mdpi.com/2313-0105/12/4/115",
+  "source": {
+    "path": "D:\\battery_soh\\batteries-12-00115.pdf",
+    "sha256": "ec3595801fd11d382aafb92fd69f35f138eafc780e0ec9fadd8f0cb3087d9066",
+    "pages": 21,
+    "reader": "pypdf",
+    "page_numbering": "1-based PDF pages, matching printed page numbers",
+    "reader_version": "6.21.2"
+  },
+  "predictor_table_verified": true,
+  "comparison": [
+    {
+      "aspect": "Predictor input dimension",
+      "paper": "3",
+      "implemented": "3 (F1)",
+      "status": "matches",
+      "pages": [
+        9
+      ],
+      "location": "Table 3"
+    },
+    {
+      "aspect": "Predictor sequence length",
+      "paper": "5",
+      "implemented": "5",
+      "status": "matches",
+      "pages": [
+        9
+      ],
+      "location": "Table 3"
+    },
+    {
+      "aspect": "Predictor LSTM layers",
+      "paper": "2",
+      "implemented": "2 stacked unidirectional LSTM layers (B2)",
+      "status": "matches",
+      "pages": [
+        9
+      ],
+      "location": "Table 3"
+    },
+    {
+      "aspect": "Predictor hidden size",
+      "paper": "64",
+      "implemented": "64",
+      "status": "matches",
+      "pages": [
+        9
+      ],
+      "location": "Table 3"
+    },
+    {
+      "aspect": "Predictor output dimension",
+      "paper": "1",
+      "implemented": "1 linear SOH output",
+      "status": "matches",
+      "pages": [
+        9
+      ],
+      "location": "Table 3"
+    },
+    {
+      "aspect": "Feature types",
+      "paper": "IC peak; charged capacity; voltage slope",
+      "implemented": "ic_peak_height, partial_charge_ah, partial_dv_dq",
+      "status": "matches_feature_types_not_exact_numerical_extraction",
+      "pages": [
+        5,
+        8
+      ],
+      "location": "Section 2.2 and Section 3.1"
+    },
+    {
+      "aspect": "Partial-charge voltage interval",
+      "paper": "[V_cutoff - 0.4 V, V_cutoff - 0.2 V]; 3.8-4.0 V at 4.2 V cutoff",
+      "implemented": "3.8-4.0 V",
+      "status": "matches",
+      "pages": [
+        4,
+        5
+      ],
+      "location": "Table 1; Equations 3-4"
+    },
+    {
+      "aspect": "IC smoothing",
+      "paper": "Gaussian filter, sigma=1",
+      "implemented": "Cubic Savitzky-Golay, 11 samples on a 2 mV voltage grid; 7/11/15 sensitivity checks",
+      "status": "differs",
+      "pages": [
+        6
+      ],
+      "location": "Section 2.2"
+    },
+    {
+      "aspect": "IC peak search domain",
+      "paper": "Exact peak-search interval and resampling resolution not specified in the main text",
+      "implemented": "3.80-4.15 V",
+      "status": "paper_detail_not_specified",
+      "pages": [
+        4,
+        5,
+        6
+      ],
+      "location": "Section 2.2"
+    },
+    {
+      "aspect": "Outlier handling",
+      "paper": "Remove obvious outliers; correct abnormal points using trend fitting/deviation analysis",
+      "implemented": "Keep all candidates in audit tables; reject unreliable inputs/windows; no across-cycle trend filling",
+      "status": "differs",
+      "pages": [
+        6
+      ],
+      "location": "Section 2.2"
+    },
+    {
+      "aspect": "Feature normalization",
+      "paper": "Map feature values to [0,1]; exact fitting partition not stated",
+      "implemented": "StandardScaler fitted on training batteries only",
+      "status": "differs",
+      "pages": [
+        6
+      ],
+      "location": "Section 2.2"
+    },
+    {
+      "aspect": "SOH denominator",
+      "paper": "Current capacity divided by nominal capacity; CX2 nominal=1.35 Ah",
+      "implemented": "Validated discharge current integral / 1.35 Ah; counters cross-checked",
+      "status": "matches_denominator_capacity_validation_not_reproduced",
+      "pages": [
+        4
+      ],
+      "location": "Equation 1; Table 1"
+    },
+    {
+      "aspect": "Aging domain",
+      "paper": "Focus on aging from initial state to 80% SOH",
+      "implemented": "No 80% cutoff; retained CX2_38 targets cover approximately 47.2%-99.7% SOH",
+      "status": "differs",
+      "pages": [
+        4
+      ],
+      "location": "Section 2.1"
+    },
+    {
+      "aspect": "Evaluation split",
+      "paper": "Within each battery: first 50% training, latter 50% testing",
+      "implemented": "Battery-level split; validation CX2_36, held-out test CX2_38",
+      "status": "differs",
+      "pages": [
+        12
+      ],
+      "location": "Section 4.1"
+    },
+    {
+      "aspect": "CX2 discharge protocol summary",
+      "paper": "Table 1 lists 0.5C",
+      "implemented": "Observed validated routine records include approximately 0.4C, 0.5C and 1C; protocol is audited per cycle",
+      "status": "protocol_equivalence_not_established",
+      "pages": [
+        4
+      ],
+      "location": "Table 1"
+    },
+    {
+      "aspect": "Physical branch and loss",
+      "paper": "Separate weight-generator LSTM and monotonicity loss; GWO tuning of global physical weight",
+      "implemented": "Supervised predictor only, MSE; excluded by task",
+      "status": "intentionally_excluded",
+      "pages": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "location": "Section 3; Equations 12-16"
+    },
+    {
+      "aspect": "Optimizer and regularization",
+      "paper": "Optimizer, learning rate, weight decay, dropout, batch size, epochs and early stopping not specified in searchable main-text settings/Table 3",
+      "implemented": "AdamW, lr=0.0005, weight decay=0.001, dropout=0.2, batch=64, max=200, patience=20",
+      "status": "benchmark_choices_not_claimed_to_match_paper",
+      "pages": [
+        8,
+        9,
+        12
+      ],
+      "location": "Reported predictor/settings and experimental description"
+    },
+    {
+      "aspect": "Metric reporting",
+      "paper": "Equation 26 has MAPE multiplied by 100; Table 4 uses unlabeled small decimal MAPE values. Equation 25 defines MSE while result tables report MAE.",
+      "implemented": "Separate MAE/MSE/RMSE with explicit fractional and percentage-point units; MAPE reported as percent",
+      "status": "published_units_require_care_no_automatic_rescaling",
+      "pages": [
+        12,
+        13,
+        17
+      ],
+      "location": "Equations 24-26; Tables 4-6"
+    }
+  ],
+  "observed_routine_discharge_crate_medians": {
+    "CX2_16": 0.4076689702493173,
+    "CX2_33": 0.4995722240871853,
+    "CX2_34": 0.999981473993372,
+    "CX2_35": 0.499830819942333,
+    "CX2_36": 0.9996843338012694,
+    "CX2_37": 0.9998382462395562,
+    "CX2_38": 0.99958720030608
+  },
+  "unresolved_paper_details": [
+    "dropout",
+    "optimizer",
+    "learning rate",
+    "weight decay",
+    "batch size",
+    "epoch budget",
+    "early-stopping rule",
+    "normalizer fitting partition",
+    "exact IC peak search interval and voltage-grid resolution"
+  ],
+  "scope": "Post-experiment methodological verification only; no model retraining, test reevaluation or test-driven redesign.",
+  "comparison_policy": "Predictor-dimension and feature-type match; not an exact AW-PINN reproduction and no direct published-performance superiority claim.",
+  "saved_checkpoint_verification": [
+    {
+      "run_id": "B2_F1_L5_seed42",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    },
+    {
+      "run_id": "B2_F1_L5_seed123",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    },
+    {
+      "run_id": "B2_F1_L5_seed2026",
+      "input_size": 3,
+      "sequence_length": 5,
+      "num_layers": 2,
+      "hidden_size": 64,
+      "output_size": 1,
+      "parameter_count": 51009,
+      "forward_or_training_called": false
+    }
+  ],
+  "protected_artifacts_unchanged": true,
+  "test_reevaluated": false,
+  "models_retrained": false
+}

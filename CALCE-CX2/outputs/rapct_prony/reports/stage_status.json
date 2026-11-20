@@ -1,0 +1,12 @@
+{
+  "checkpoint_0": "executed_audit_and_rest_inventory; literature_full_text_verification_partial",
+  "checkpoint_1": "MLP_CNN_fusion_pilots_executed; CNN_interrupted_then_weights_continued",
+  "checkpoint_2": "frozen_and_joint_Transformer_pilots_executed; selected_on_validation_only",
+  "checkpoint_3": "zero_and_nonzero_regularization_aging_pilots_executed",
+  "checkpoint_4": "experimental_recovery_blocked_under_conservative_gap_policy",
+  "checkpoint_5": "single_mode_synthetic_unit_tests_passed",
+  "checkpoint_6": "multi_mode_synthetic_tests_and_24_seeded_identification_runs_executed",
+  "checkpoint_7": "full_composition_synthetic_forward_tests_only; no_experimental_joint_training",
+  "checkpoint_8": "bounded_nested_CNN_pilot_only; full_outer_study_and_other_component_searches_incomplete",
+  "checkpoint_9": "interim_artifact_derived_research_report_not_final_scientific_confirmation"
+}

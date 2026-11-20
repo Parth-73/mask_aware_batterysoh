@@ -1,0 +1,30 @@
+{
+  "metrics_rows": 30,
+  "completed_experimental_fits": 23,
+  "primary_matched_samples": 1102,
+  "curves_shape": [
+    11010,
+    3,
+    176
+  ],
+  "metric_units_verified": true,
+  "battery_separation_verified": true,
+  "labels_match_original_validated_capacity": true,
+  "identifier_strings_verified": true,
+  "study_resume_no_retraining": true,
+  "physics_checkpoints": [
+    {
+      "run": "physics_guided_f10a5595471a",
+      "best_epoch": 47,
+      "full_regularization_active": true
+    },
+    {
+      "run": "physics_zero_fc1a3db8c08a",
+      "best_epoch": 47,
+      "full_regularization_active": true
+    }
+  ],
+  "png_figures": 34,
+  "vector_figures": 34,
+  "historical_drift_only": "outputs/battery_splits.json_changed_during_execution_not_written_by_this_task"
+}

@@ -1,0 +1,42 @@
+{
+  "method": "StandardScaler",
+  "formula": "(x-training_mean)/training_scale",
+  "feature_order": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "training_batteries": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_37"
+  ],
+  "training_rows": 7790,
+  "mean": [
+    4285.277332768784,
+    4144.20631126361,
+    1.3693831891289687,
+    3.9417471116816274,
+    0.1255316064574028
+  ],
+  "scale": [
+    905.4436053924217,
+    667.0345761533706,
+    1.071112002956,
+    0.036528642128679706,
+    0.019419927183578635
+  ],
+  "variance": [
+    819828.1225460274,
+    444935.12578410684,
+    1.147280922876414,
+    0.0013343416957651538,
+    0.0003771335718154964
+  ],
+  "target_scaled": false,
+  "new_cross_validation_requires_refitting": true
+}

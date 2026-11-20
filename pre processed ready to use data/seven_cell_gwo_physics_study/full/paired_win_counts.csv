@@ -1,0 +1,10 @@
+model,horizon,physics_wins,n_cells,mean_improvement_pct
+direct_transformer,1,3,7,-7.087732090885422
+direct_transformer,3,3,7,-7.136882989147764
+direct_transformer,5,3,7,-7.5982123765281475
+ols_last_CC_CV,1,0,7,0.0
+ols_last_CC_CV,3,0,7,0.0
+ols_last_CC_CV,5,0,7,0.0
+time_transformer,1,4,7,-5.803174780159464
+time_transformer,3,4,7,-4.398579181675936
+time_transformer,5,5,7,-2.7169595398168345

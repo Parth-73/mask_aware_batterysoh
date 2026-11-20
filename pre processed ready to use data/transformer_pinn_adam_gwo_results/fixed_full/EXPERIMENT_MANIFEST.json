@@ -1,0 +1,59 @@
+{
+  "experiment": "CALCE Transformer, Transformer physics Adam, Transformer physics GWO",
+  "run_mode": "full",
+  "protocol": "fixed",
+  "feature_order": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "feature_set": "all_five",
+  "forecast_horizons": [
+    1,
+    3,
+    5
+  ],
+  "lookback": 12,
+  "use_time_channel": true,
+  "optimizer_for_all_network_weights": "Adam",
+  "initial_architecture": {
+    "hidden": 48,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.1,
+    "learning_rate": 0.001
+  },
+  "adam_pinn_weights": {
+    "mono": 0.2,
+    "smooth": 0.05
+  },
+  "gwo_bounds": [
+    [
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.5
+    ]
+  ],
+  "gwo_wolves": 5,
+  "gwo_iterations": 4,
+  "proxy_epochs": 8,
+  "seed_list": [
+    42,
+    123,
+    2026
+  ],
+  "validation_selected_by_fold": [
+    {
+      "fold": "fixed_CX2_38",
+      "model": "transformer",
+      "seed": 42,
+      "val_RMSE_mean_horizons": 0.01575565959016482
+    }
+  ],
+  "caution": "soft forecasting shape losses; not a calibrated electrochemical PINN; do not treat long gaps as verified rest"
+}

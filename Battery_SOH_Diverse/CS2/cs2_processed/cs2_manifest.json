@@ -1,0 +1,46 @@
+{
+  "raw_dir": "C:\\Projects\\Battery_SOH_Diverse\\CS2",
+  "nominal_capacity_ah": 1.1,
+  "battery_holdout": null,
+  "heldout_actual": null,
+  "batteries": [
+    "CS2_2"
+  ],
+  "feature_candidates": [
+    "charge_duration_s",
+    "cc_duration_s",
+    "cv_duration_s",
+    "charge_throughput_ah",
+    "cc_throughput_ah",
+    "cv_throughput_ah",
+    "cc_mean_current_a",
+    "cv_mean_current_a",
+    "cc_start_voltage",
+    "charge_voltage_mean",
+    "charge_voltage_std",
+    "time_3p9_to_4p1_s",
+    "ir_step_proxy_ohm"
+  ],
+  "features_ranked": [
+    "charge_throughput_ah",
+    "cc_start_voltage",
+    "charge_voltage_std",
+    "cc_duration_s",
+    "cc_throughput_ah",
+    "cv_throughput_ah",
+    "charge_voltage_mean",
+    "time_3p9_to_4p1_s",
+    "ir_step_proxy_ohm",
+    "charge_duration_s",
+    "cv_duration_s",
+    "cc_mean_current_a",
+    "cv_mean_current_a"
+  ],
+  "notes": [
+    "CV time is heuristic; not verified step-based CC/CV segmentation",
+    "SOH labels require manual discharge-completeness validation",
+    "No ICA/DVA calculated without validated raw curves",
+    "Filewise export ordinal is not confirmed absolute cycle number",
+    "Feature selection uses training batteries only"
+  ]
+}

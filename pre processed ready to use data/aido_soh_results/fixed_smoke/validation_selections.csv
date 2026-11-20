@@ -1,0 +1,4 @@
+fold,heldout,kind,seed,validation_score,best_epoch
+fixed_CX2_38,CX2_38,clean_transformer,42,0.31430861353874207,2
+fixed_CX2_38,CX2_38,masked_transformer,42,0.31519995133082074,2
+fixed_CX2_38,CX2_38,aido_consistency,42,0.3152075707912445,2

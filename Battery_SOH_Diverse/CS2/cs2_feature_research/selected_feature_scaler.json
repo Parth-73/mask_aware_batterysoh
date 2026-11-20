@@ -1,0 +1,42 @@
+{
+  "feature_order": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "training_batteries": [
+    "CS2_24",
+    "CS2_25",
+    "CS2_3",
+    "CS2_33",
+    "CS2_34",
+    "CS2_35",
+    "CS2_36",
+    "CS2_37",
+    "CS2_38"
+  ],
+  "median_imputation": [
+    0.7750376052549689,
+    0.45868240988259795,
+    0.5396997928619385,
+    7.534334549897149e-05,
+    4.0096025094389915
+  ],
+  "mean": [
+    0.6871188801369531,
+    0.43122888786919494,
+    0.5358886414431454,
+    9.934679518002681e-05,
+    4.0347029121920475
+  ],
+  "scale": [
+    0.23297625176051165,
+    0.09270062212552986,
+    0.17272362668970387,
+    0.00010646892679972114,
+    0.06510478551225028
+  ],
+  "notes": "Fit on training cells only; raw physical-unit CSVs retain missing values and availability masks are separate"
+}

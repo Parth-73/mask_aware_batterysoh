@@ -1,0 +1,46 @@
+{
+  "run_mode": "full",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "lookback": 12,
+  "max_gap_hours": 24.0,
+  "train_filter_threshold_SOHP": 0.03,
+  "bounds": [
+    0.0,
+    1.1
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs": 70,
+  "gwo_population": 6,
+  "gwo_iterations": 4,
+  "gwo_candidate_epochs": 10,
+  "model_config": {
+    "hidden": 48,
+    "layers": 2,
+    "heads": 4,
+    "ff_mult": 2,
+    "dropout": 0.1,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "source_hashes": {
+    "train.csv": "fd5dc165182f1e19445e2b59eb8f63ddf092ebd59c38bc5c98de6478aa89a415",
+    "validation.csv": "d7660fb27575f8939e8d55b1771892bd611f8c042dada331edee05bb406cd659",
+    "test.csv": "ad7c1f39bee4b7d076af3c9f019c86c5ea2498190d7709db29420c218aba9b34"
+  },
+  "run_digest": "596a71517405e00de0ed11e56c7ce955ac8360a88601d72f8ae2e3fb4fd321a0"
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "synthetic_biexponential_penalty_only",
+  "modes": 8,
+  "learnable_timescales": false,
+  "seed": 123,
+  "epochs": 400,
+  "tau_bounds_s": [
+    10.0,
+    1000.0
+  ],
+  "ground_truth_timescales_s": [
+    30.0,
+    300.0
+  ],
+  "ground_truth_amplitudes": [
+    0.035,
+    0.015
+  ],
+  "claim": "mathematical_memory_identification_not_CALCE_recovery_performance"
+}

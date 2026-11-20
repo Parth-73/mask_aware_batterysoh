@@ -1,0 +1,6 @@
+battery,source,event,count
+CX2_3,multiple,exact_duplicate_rows,20872
+CX2_3,CX2_3/cx2_3_9_29_10.xlsx,overlapping_session_interval,1
+CX2_32,multiple,exact_duplicate_rows,21
+CX2_8,multiple,exact_duplicate_rows,3213
+CX2_8,CX2_8/CX2_8_11_21_11.xlsx,overlapping_session_interval,1

@@ -1,0 +1,205 @@
+{
+  "config": {
+    "epochs": 10,
+    "max_epochs_full_protocol": 200,
+    "smoke": false,
+    "status": "partial_reduced_budget",
+    "suite": "all",
+    "folds": [
+      "CX2_16",
+      "CX2_33",
+      "CX2_34",
+      "CX2_35",
+      "CX2_36",
+      "CX2_37",
+      "CX2_38",
+      "historical"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "matrix": [
+      [
+        "lstm",
+        "five",
+        5,
+        0.0,
+        0.0,
+        false,
+        "primary"
+      ],
+      [
+        "lstm_pinn",
+        "five",
+        5,
+        0.1,
+        0.1,
+        false,
+        "primary"
+      ],
+      [
+        "transformer",
+        "five",
+        5,
+        0.0,
+        0.0,
+        false,
+        "primary"
+      ],
+      [
+        "cnn_pinn",
+        "five",
+        5,
+        0.1,
+        0.1,
+        false,
+        "primary"
+      ],
+      [
+        "lstm_pinn",
+        "five",
+        5,
+        0.0,
+        0.0,
+        false,
+        "physics_ablation"
+      ],
+      [
+        "cnn_pinn",
+        "five",
+        5,
+        0.0,
+        0.0,
+        false,
+        "physics_ablation"
+      ],
+      [
+        "lstm",
+        "three",
+        5,
+        0.0,
+        0.0,
+        false,
+        "feature_ablation"
+      ],
+      [
+        "lstm",
+        "nine",
+        5,
+        0.0,
+        0.0,
+        false,
+        "feature_ablation"
+      ],
+      [
+        "lstm",
+        "five",
+        5,
+        0.0,
+        0.0,
+        true,
+        "sequence_ablation"
+      ],
+      [
+        "lstm",
+        "five",
+        10,
+        0.0,
+        0.0,
+        true,
+        "sequence_ablation"
+      ],
+      [
+        "lstm",
+        "five",
+        20,
+        0.0,
+        0.0,
+        true,
+        "sequence_ablation"
+      ]
+    ],
+    "checkpoint_criterion": "minimum inner-validation MSE; patience 20",
+    "coefficient_space": [
+      {
+        "physics": 0.1,
+        "regularization": 0.1
+      }
+    ],
+    "coefficient_policy": "fixed singleton prespecified; zero-zero ablation; no outer-fold tuning",
+    "optimizer": {
+      "name": "AdamW",
+      "lr": 0.0005,
+      "weight_decay": 0.001,
+      "batch_size": 64,
+      "gradient_clip": 1.0,
+      "scheduler": "ReduceLROnPlateau",
+      "factor": 0.5,
+      "patience": 5,
+      "min_lr": 1e-06
+    },
+    "device": "cuda",
+    "aggregation": "equal-weight battery macro metrics; seed sample SD separately",
+    "recommendation": "mean inner validation RMSE across folds and seeds; primary five-feature length-5 only"
+  },
+  "code_hashes": {
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\benchmark\\__init__.py": "e48f9a930009448e3b342a2f5fc4e74a53ae5325b7ff72d65138fbced8d47ea3",
+    "src\\benchmark\\data.py": "85004537956d89a2b9cc9e1625b5600a501c8fbcb5ad236a6fe29eeed45da5bd",
+    "src\\benchmark\\engine.py": "3b62dda81e9082f6d383d9dbcd13a77909c5b994577f0228de99ae4dd0249546",
+    "src\\benchmark\\models.py": "6ed29d1840cc19aa09a409c8c7516db275cdabcc67d3c6fbb6acecdc6582ee5f",
+    "src\\benchmark\\report.py": "fa2f361e8b854372ebe018163eb6f1f780b701d91216f335f0d77e089e3bf972",
+    "src\\benchmark\\run.py": "39368f4d689aa8dacedd1396fadc0c1dd10013c629aa75995ee3380f7131c0e4",
+    "src\\benchmark\\runtime.py": "8e6f3d3b598645ed121c200169d900b0213bdedbedae5d45a8ea213231d3ddfa",
+    "src\\build_dataset.py": "312f8a6cbc698191fce1455f1817a03584bac259b6e156bb5560722f4c7a8dd6",
+    "src\\common.py": "c1adf2fa630b8c88ff328573a7418a0d7206cee058f2272c4a0ad9d48d4def2e",
+    "src\\extract_features.py": "299ef13269e21c1280add9bf00a5ca71d1459d0455c90115a9f45776671b0cee",
+    "src\\feature_analysis.py": "00d63dabc01a1808983d75848f136f0b1f1acc8afeab922ac7232942c1dd41ea",
+    "src\\inspect_cx2.py": "a9cc6a1aa0cddbf444348ad07e1fc59383bc75229f1848301f83b1ac7b647946",
+    "src\\inspect_dataset.py": "c7b79d494b311f9642abcdde3732fd4f8f3686a6877be17c5fd62e2c0700c0f3",
+    "src\\models\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\models\\lstm_baselines.py": "2c82dd23367c96c26ebf6d31ab87c3e065db0b5fbf50b754cbef6fe9ad9ee9a5",
+    "src\\paper_reproduction\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\paper_reproduction\\config.py": "1fa47f5cdaf3a5e07d1e6d8887dcd34f0fa831b90497111881cefbaa6b6d7e98",
+    "src\\paper_reproduction\\dataset.py": "e524480feee6db0998f7b594f9629658a7cb1ca37b396768c32169581012c9d9",
+    "src\\paper_reproduction\\features.py": "26975ec5ebd96ca8e588ce4c8ff8faae66103047fa3f2ed375b545ad44775ba8",
+    "src\\paper_reproduction\\model.py": "2fb4dd279361ae0ec836af2d6e689bec1d4ba2fcd2b67854dfc1acd9cb4eed20",
+    "src\\paper_reproduction\\report.py": "37fceb50c904b913b7ef81a391f20c4513eefe2104e61fcb9b91709f90ae6da1",
+    "src\\paper_reproduction\\run.py": "3a994c85610ba3e1cb37913b89bae1db4f7f452e23e8befe7f3ce2b45f17387b",
+    "src\\paper_reproduction_fixed_epochs.py": "9ec65055d9f88a696b3de394ddd9e3a6994d2dc489a914048715f496d628a941",
+    "src\\reconstruct_cycles.py": "6169f5c53afd392d400743c5c10b324be1db170e2010ef34ec9419dbcb205c1a",
+    "src\\training\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\training\\config.py": "f5fa589cf377f57218005fcf9334adbac2e95c78f1d1bef6aa751b092ae78d92",
+    "src\\training\\dataset.py": "d8b24cae0f7d43fe417879644a6809b4084cb4f6a34f820a199122b2386bbe19",
+    "src\\training\\evaluate.py": "453714bb80170f5cea7ab9c265b4f51dfce7c4b4e8d0cc3828b6c202c0f6c27b",
+    "src\\training\\report.py": "8fb040f52eb934548bf7d29de32ad29d4a4b77fe38f39c905b7ab9ee5add1de6",
+    "src\\training\\train_lstm.py": "90abe18487e0d3cbae06ddf9704329c9c32e68790049e3d9aa9806d7770958ff",
+    "src\\validate_features.py": "95bda760042ae320cc472d25d306d6df60a6b86e93cb50a04047b9c6190d4691"
+  },
+  "data_hashes": {
+    "cx2_features_all.csv": "0c1b3fcb46c5c0e51bba0b1233e091e5d08d31ba42a997579662c3ee5a1d7fb1",
+    "cycle_quality.csv": "e5c79969c1e59124f1dc90a7fe70968d7f20267d0749c7af9ba6c65cc7c51663",
+    "rejected_cycles.csv": "6f3353bdf55990380ffc38140afdcdf45dcb87fb2173bdb01cad020493fbc511",
+    "feature_definitions.csv": "ae8b11bed3df8dbbe2dbe60550c87b0d7e7b772bed08d6953e887ac9e2ff19ff",
+    "feature_sets.json": "4f62337cf60d15add549415d12047ad02827ac5124533ad11f12d8bab08034da",
+    "inspection_manifest.csv": "50e6ff02e9332ea4902338a5b74779f980c8e0b1e221e04964017e317aaac2a6"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "torch": "2.11.0+cu128",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "tqdm": "4.68.2",
+    "openpyxl": "3.1.5",
+    "joblib": "1.5.3",
+    "pytest": "9.0.3"
+  },
+  "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+  "git_commit": "cdfd29167afb76fdd7c9513c9132bc97efc105b0",
+  "hardware_device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+}

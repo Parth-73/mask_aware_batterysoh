@@ -1,0 +1,18 @@
+{
+  "samples_sha256": "fc640b61afcb728da3258e4a1951a78557cd6feab1bbe3b78eb377b44cfe0488",
+  "curves_sha256": "c9cc3ec8de88c0013d1524b2d0d105d3f0c4fc9447c615dc203db1b2cdfcb3f3",
+  "raw_hash_inventory_sha256": "9d3048ce544e900a726723b50a8de0be4ca96b05c637836e0a1d6c8bc317bd0c",
+  "channel_order": [
+    "Q_Ah",
+    "dQdV_Ah_per_V",
+    "I_A"
+  ],
+  "voltage_interval_v": [
+    3.8,
+    4.15
+  ],
+  "spacing_v": 0.002,
+  "missing_curve_policy": "reject_no_extrapolation",
+  "feature_source": "unchanged_historical_charging_features",
+  "parser": "mixed_original_openpyxl_cache_and_calamine_with_historical_target_checks"
+}

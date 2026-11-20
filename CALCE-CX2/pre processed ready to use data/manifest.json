@@ -1,0 +1,92 @@
+{
+  "source_hashes": {
+    "outputs\\cx2_features_all.csv": "0c1b3fcb46c5c0e51bba0b1233e091e5d08d31ba42a997579662c3ee5a1d7fb1",
+    "outputs\\cycle_quality.csv": "e5c79969c1e59124f1dc90a7fe70968d7f20267d0749c7af9ba6c65cc7c51663",
+    "outputs\\lstm_baselines\\experiment_config.json": "319df417a6bbdbe324a4ea1f46419b73a8c37544a2e9b11473b7619b9e15a8eb",
+    "outputs\\lstm_baselines\\feature_selection.json": "247574002132a0c9d27f7b03dcb7d8f292acda32d861b9eb10032ba9488490b0",
+    "outputs\\feature_definitions.csv": "ae8b11bed3df8dbbe2dbe60550c87b0d7e7b772bed08d6953e887ac9e2ff19ff"
+  },
+  "output_hashes": {
+    "all_data.csv": "b25557faad0eac5945d01d9d53516fffaf8006b92e16f9356292b7df67d23939",
+    "feature_definitions.csv": "15021f6763a464c7b10906b098c3bdae71e721e0968ba82327a4d814cc5bded6",
+    "feature_order.json": "442d9eea5f1096662395ae4af5645edc73d4a89687cb5c94492b26583b846d87",
+    "feature_selection_reasons.csv": "3d02b4b08a0b565921c42a762b4559d50f3969f238e47ea4945cc800d6618a37",
+    "load_data.py": "2b9d026a1a8397e8895685598f51065b0672164fc628cecdca8a33b0cfcf46c4",
+    "README.md": "3dc89f548d1193136dd2098fb1e0b52a4202511b142f7899bcb06ca1ef0a6cde",
+    "rebuild_dataset.py": "ccb53900923603579de2ce434eee66bd30311799089eab758dcc976fc4ca4437",
+    "row_audit.csv": "38f9464a7c02be6121a8cadc6efd518657d3a363cd546b4ffb7d28c918475d44",
+    "sample_counts.csv": "67707c34f347cf86586503145c52d1ce4e8bdfbf5eb2d9a750c2bb670c649a61",
+    "split_definition.json": "64425c92f731338929dfe3a3461f26f4672a65e710f48b94bd5643ede92bca0c",
+    "test.csv": "ad7c1f39bee4b7d076af3c9f019c86c5ea2498190d7709db29420c218aba9b34",
+    "train.csv": "fd5dc165182f1e19445e2b59eb8f63ddf092ebd59c38bc5c98de6478aa89a415",
+    "training_feature_statistics.csv": "d1adc15622985caa558ae91b5c7558da9151634ad19c9464d406dc101eadb970",
+    "validation.csv": "d7660fb27575f8939e8d55b1771892bd611f8c042dada331edee05bb406cd659",
+    "verification.json": "0786aa6a30f56c4f330c0075adaa893bd6894a188d2184dabfcbbc728486ece1",
+    "model_inputs\\X_test.csv": "695cf2b39b8adab99a6fe0a015ed5878618806534bae98bf8b7c0dca7435793b",
+    "model_inputs\\X_train.csv": "7c2fd8b22964cd64552a6c369359e8b5b080f2f2d0e68f69c5e68ad796da9585",
+    "model_inputs\\X_validation.csv": "6fdf1ceac2c81c0492718d2762f7250bc4b55eb22c243ecf5ac9750d08208a7f",
+    "model_inputs\\y_test.csv": "702ef923e1a01776d499fcf964fda37c3c39d0825eb2c1336005e584def3dbe3",
+    "model_inputs\\y_train.csv": "c8899d0f962b288d25a5a7ae18b61a3f62a59e5b4c531ad2928b82c7f2bad3ff",
+    "model_inputs\\y_validation.csv": "7ea212b57938aa9e4dccf8dc721b4eeb3b36f95350959417e64687d07882fc8c",
+    "source_evidence\\experiment_config.json": "319df417a6bbdbe324a4ea1f46419b73a8c37544a2e9b11473b7619b9e15a8eb",
+    "source_evidence\\feature_definitions.csv": "ae8b11bed3df8dbbe2dbe60550c87b0d7e7b772bed08d6953e887ac9e2ff19ff",
+    "source_evidence\\feature_selection.json": "247574002132a0c9d27f7b03dcb7d8f292acda32d861b9eb10032ba9488490b0",
+    "standardized\\scaler.json": "e0ac0daf3a074ed3611b29fe3849a0a3617d543d055229b84e907c814709328f",
+    "standardized\\X_test.csv": "eab5c39c70376afe9fa99524e65420af8b8431f1ac350dd0a62fd45d5dfd10a4",
+    "standardized\\X_train.csv": "e6db6b59bf652b470d62d6ad899227dc18822aa59f87845c03e4f73f6a5efd54",
+    "standardized\\X_validation.csv": "e40d67cd9c210dcaed0e87b0e87d89cf1df0bb482a2542cd9073b1234e15d314"
+  },
+  "total_rows": 11010,
+  "split_rows": {
+    "train": 7790,
+    "validation": 1743,
+    "test": 1477
+  },
+  "predictors": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "target": "soh",
+  "nominal_capacity_ah": 1.35,
+  "target_clipped": false,
+  "target_smoothed": false,
+  "missing_features_imputed": false,
+  "feature_values_modified_in_original_unit_csvs": false,
+  "normalization_fitted_on_training_only": true,
+  "source_files_unchanged": true,
+  "source_curve_cohort_requirement": false,
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0"
+  },
+  "historical_selection": {
+    "policy": "Mean validation RMSE across 3 seeds, B1/L5, common cohort",
+    "selected_features": "F3",
+    "scores": [
+      {
+        "feature_set": "F3",
+        "validation_rmse_mean": 0.0054674842334740915,
+        "validation_rmse_std": 0.00045973267611543113,
+        "seeds": 3
+      },
+      {
+        "feature_set": "F2",
+        "validation_rmse_mean": 0.0061327391794980405,
+        "validation_rmse_std": 0.000791635968299677,
+        "seeds": 3
+      },
+      {
+        "feature_set": "F1",
+        "validation_rmse_mean": 0.007649334432131453,
+        "validation_rmse_std": 0.0002698270968973954,
+        "seeds": 3
+      }
+    ]
+  },
+  "seed": 42
+}

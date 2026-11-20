@@ -1,0 +1,16 @@
+{
+  "train": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_36"
+  ],
+  "validation": [
+    "CX2_37"
+  ],
+  "outer": [
+    "CX2_38"
+  ],
+  "status": "cross_battery_pilot_not_nested_final"
+}

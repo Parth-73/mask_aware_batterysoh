@@ -1,0 +1,21 @@
+{
+  "heldout": "CX2_16",
+  "inner_val": "CX2_33",
+  "train_cells": [
+    "CX2_34",
+    "CX2_35",
+    "CX2_36",
+    "CX2_37",
+    "CX2_38"
+  ],
+  "train_rows_before": 7623,
+  "train_rows_after": 7615,
+  "n_filtered": 8,
+  "windows": {
+    "train": 2635,
+    "val": 476,
+    "test": 833
+  },
+  "dt_scale_h": 3.249722222222222,
+  "run_digest": "596a71517405e00de0ed11e56c7ce955ac8360a88601d72f8ae2e3fb4fd321a0"
+}

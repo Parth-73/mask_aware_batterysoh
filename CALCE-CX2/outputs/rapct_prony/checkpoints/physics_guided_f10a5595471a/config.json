@@ -1,0 +1,20 @@
+{
+  "stage": "physics",
+  "seed": 42,
+  "label": "reduced_budget_physics_pilot",
+  "source_encoder": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\transformer_joint_b837fd75ec74",
+  "source_checkpoint_sha256": "8e532cffca967c4db6a100171321ab6e96dc4ac755c5b338d185923fcd33e1a4",
+  "physics_weight": 0.01,
+  "smooth_weight": 0.001,
+  "epochs": 50,
+  "lr": 0.0005,
+  "weight_decay": 0.001,
+  "batch_size_segments": 16,
+  "outer": "CX2_38",
+  "validation": "CX2_36",
+  "warmup_supervised_epochs": 10,
+  "warmup_ramp_end": 30,
+  "state_initialization": "encoder_estimated_per_unknown_segment",
+  "units": "fractional_soh_and_observed_cycle_increments",
+  "interpretation": "physics_guided_mathematical_priors_not_electrochemical_PDE"
+}

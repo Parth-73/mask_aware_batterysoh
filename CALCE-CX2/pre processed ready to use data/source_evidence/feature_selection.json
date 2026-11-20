@@ -1,0 +1,24 @@
+{
+  "policy": "Mean validation RMSE across 3 seeds, B1/L5, common cohort",
+  "selected_features": "F3",
+  "scores": [
+    {
+      "feature_set": "F3",
+      "validation_rmse_mean": 0.0054674842334740915,
+      "validation_rmse_std": 0.00045973267611543113,
+      "seeds": 3
+    },
+    {
+      "feature_set": "F2",
+      "validation_rmse_mean": 0.0061327391794980405,
+      "validation_rmse_std": 0.000791635968299677,
+      "seeds": 3
+    },
+    {
+      "feature_set": "F1",
+      "validation_rmse_mean": 0.007649334432131453,
+      "validation_rmse_std": 0.0002698270968973954,
+      "seeds": 3
+    }
+  ]
+}

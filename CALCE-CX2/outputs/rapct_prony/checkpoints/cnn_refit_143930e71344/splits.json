@@ -1,0 +1,15 @@
+{
+  "train": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_36",
+    "CX2_37"
+  ],
+  "validation": [],
+  "outer": [
+    "CX2_38"
+  ],
+  "status": "outer_refit_fixed_epochs_no_validation_selection"
+}

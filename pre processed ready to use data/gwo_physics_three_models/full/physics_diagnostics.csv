@@ -1,0 +1,13 @@
+split,model,variant,monotonic_violation_fraction,out_of_bounds_fraction
+validation,direct_transformer,baseline,0.4796875,0.0
+validation,direct_transformer,physics_gwo,0.1609375,0.0
+validation,time_transformer,baseline,0.6171875,0.0
+validation,time_transformer,physics_gwo,0.4296875,0.0
+validation,ols_last_CC_CV,baseline,0.0,0.0
+validation,ols_last_CC_CV,physics_gwo,0.0,0.0
+test,direct_transformer,baseline,0.5467479674796748,0.0
+test,direct_transformer,physics_gwo,0.1565040650406504,0.0
+test,time_transformer,baseline,0.8353658536585366,0.0
+test,time_transformer,physics_gwo,0.7276422764227642,0.0
+test,ols_last_CC_CV,baseline,0.0,0.0
+test,ols_last_CC_CV,physics_gwo,0.0,0.0

@@ -1,0 +1,9 @@
+{
+  "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\processed\\transformer_embeddings_transformer_joint_b837fd75ec74.npy",
+  "encoder_sha256": "8e532cffca967c4db6a100171321ab6e96dc4ac755c5b338d185923fcd33e1a4",
+  "windows_sha256": "83ade5801f181812c183650975a3e7ee992b02844eb891e2c9b5821a5bdf4cc1",
+  "shape": [
+    8395,
+    64
+  ]
+}

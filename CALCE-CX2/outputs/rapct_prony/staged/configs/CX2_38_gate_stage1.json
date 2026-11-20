@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "stage": "1",
+  "outer": "CX2_38",
+  "selected_cnn": {
+    "channels": 16,
+    "embedding": 64
+  },
+  "runs": [
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A0_CX2_38_CX2_16_s42_65a01f40b67e",
+      "configuration_id": "A0_CX2_38_CX2_16_s42_65a01f40b67e",
+      "stage": "A0",
+      "seed": 42,
+      "validation_rmse_fraction": 0.009461394417078984
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A0_CX2_38_CX2_16_s123_846daafa007f",
+      "configuration_id": "A0_CX2_38_CX2_16_s123_846daafa007f",
+      "stage": "A0",
+      "seed": 123,
+      "validation_rmse_fraction": 0.009505157364939227
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A0_CX2_38_CX2_16_s2026_175b61c5111f",
+      "configuration_id": "A0_CX2_38_CX2_16_s2026_175b61c5111f",
+      "stage": "A0",
+      "seed": 2026,
+      "validation_rmse_fraction": 0.012143180233411061
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A1_CX2_38_CX2_16_s42_01a8337aefc0",
+      "configuration_id": "A1_CX2_38_CX2_16_s42_01a8337aefc0",
+      "stage": "A1",
+      "seed": 42,
+      "validation_rmse_fraction": 0.015216209347337634
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A1_CX2_38_CX2_16_s123_3a4e95ae05e9",
+      "configuration_id": "A1_CX2_38_CX2_16_s123_3a4e95ae05e9",
+      "stage": "A1",
+      "seed": 123,
+      "validation_rmse_fraction": 0.012311717042038515
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A1_CX2_38_CX2_16_s2026_8bf4ce75c02b",
+      "configuration_id": "A1_CX2_38_CX2_16_s2026_8bf4ce75c02b",
+      "stage": "A1",
+      "seed": 2026,
+      "validation_rmse_fraction": 0.013178093456349863
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A2_CX2_38_CX2_16_s42_f08be0bf6b6e",
+      "configuration_id": "A2_CX2_38_CX2_16_s42_f08be0bf6b6e",
+      "stage": "A2",
+      "seed": 42,
+      "validation_rmse_fraction": 0.00874981016031925
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A2_CX2_38_CX2_16_s123_5a65362901b5",
+      "configuration_id": "A2_CX2_38_CX2_16_s123_5a65362901b5",
+      "stage": "A2",
+      "seed": 123,
+      "validation_rmse_fraction": 0.008929790979062319
+    },
+    {
+      "path": "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A2_CX2_38_CX2_16_s2026_ee80209f64c8",
+      "configuration_id": "A2_CX2_38_CX2_16_s2026_ee80209f64c8",
+      "stage": "A2",
+      "seed": 2026,
+      "validation_rmse_fraction": 0.007292824913774266
+    }
+  ],
+  "outer_evaluated": false,
+  "status": "reduced_budget_pilot; one outer fold, all three final seeds; two inner validation cells for search"
+}

@@ -1,0 +1,96 @@
+{
+  "feature_set": "F3",
+  "architecture": "B1",
+  "sequence_length": 5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "selected_run_ids": [
+    "B1_F3_L5_seed42",
+    "B1_F3_L5_seed123",
+    "B1_F3_L5_seed2026"
+  ],
+  "literature_run_ids": [
+    "B2_F1_L5_seed42",
+    "B2_F1_L5_seed123",
+    "B2_F1_L5_seed2026"
+  ],
+  "feature_scores": [
+    {
+      "feature_set": "F3",
+      "validation_rmse_mean": 0.0054674842334740915,
+      "validation_rmse_std": 0.00045973267611543113,
+      "seeds": 3
+    },
+    {
+      "feature_set": "F2",
+      "validation_rmse_mean": 0.0061327391794980405,
+      "validation_rmse_std": 0.000791635968299677,
+      "seeds": 3
+    },
+    {
+      "feature_set": "F1",
+      "validation_rmse_mean": 0.007649334432131453,
+      "validation_rmse_std": 0.0002698270968973954,
+      "seeds": 3
+    }
+  ],
+  "architecture_scores": [
+    {
+      "architecture": "B1",
+      "validation_rmse_mean": 0.0054674842334740915,
+      "validation_rmse_std": 0.00045973267611543113,
+      "seeds": 3
+    },
+    {
+      "architecture": "B4",
+      "validation_rmse_mean": 0.005612474085998229,
+      "validation_rmse_std": 0.0005195728508646714,
+      "seeds": 3
+    },
+    {
+      "architecture": "B3",
+      "validation_rmse_mean": 0.006895872200571311,
+      "validation_rmse_std": 0.0007255996517027771,
+      "seeds": 3
+    },
+    {
+      "architecture": "B2",
+      "validation_rmse_mean": 0.008554904810214776,
+      "validation_rmse_std": 0.0002591041259072777,
+      "seeds": 3
+    }
+  ],
+  "sequence_scores": [
+    {
+      "sequence_length": 5,
+      "validation_rmse_mean": 0.0054674842334740915,
+      "validation_rmse_std": 0.00045973267611543113,
+      "seeds": 3
+    },
+    {
+      "sequence_length": 10,
+      "validation_rmse_mean": 0.006407585448825345,
+      "validation_rmse_std": 0.0014825033048178164,
+      "seeds": 3
+    },
+    {
+      "sequence_length": 20,
+      "validation_rmse_mean": 0.007302830616209517,
+      "validation_rmse_std": 0.0027337671253186424,
+      "seeds": 3
+    }
+  ],
+  "policy": "Staged validation-only feature then architecture-at-L5 then sequence selection; seed-mean RMSE, deterministic lexical ties; no best-seed selection",
+  "test_opened": false,
+  "checkpoint_hashes": {
+    "B1_F3_L5_seed123": "b4e72e301903da7519016f87dcbc5cb36438d6f7f00c366298bfd6119261c42f",
+    "B1_F3_L5_seed2026": "655c6d31e37989305659894a49e9b8e1d49da0daaeaa7f4482f8c29c46d7b9ea",
+    "B1_F3_L5_seed42": "2e68b9c6ec26bb14e10e5b40041e7e137a853e04c96e9c7b4ea923da93c618e5",
+    "B2_F1_L5_seed123": "2b6e4e2e980c27eb30b60fcc7321bd89c87a79a4d52bf27fd5a3e0c95944c2a0",
+    "B2_F1_L5_seed2026": "c5c5b3d6dfe2fb1d8afc054f84828e25d896e7fe88df74660f303ac6cd3fc940",
+    "B2_F1_L5_seed42": "e590f7a4bf0e5c6dcae35793a754c4154baaf04ec000a95004327a36dc921bdf"
+  }
+}

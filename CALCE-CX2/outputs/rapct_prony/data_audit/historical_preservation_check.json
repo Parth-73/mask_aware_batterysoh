@@ -1,0 +1,10 @@
+{
+  "protected_file_count": 49,
+  "changed": {
+    "outputs\\battery_splits.json": {
+      "before": "a6520d66915eadce5436cc6be67c2637b318a90ff2bd847750d3339bfc84b618",
+      "after": "cbab7583ec6bfec5510ef0d96054774b9c72802f9c49873341d4f5b4822e55c6"
+    }
+  },
+  "all_unchanged": false
+}

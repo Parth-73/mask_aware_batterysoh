@@ -1,0 +1,7 @@
+fold,model,seed,best_epoch,val_selection_score,train_seconds,parameters,checkpoint
+fixed_CX2_38,ols_cc_cv,42,0,0.06724558073931733,0.0,6,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\ols_cc_cv_best.joblib
+fixed_CX2_38,direct_masked,42,1,0.5044445276260376,0.704823000007309,41522,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\direct_masked_best.pt
+fixed_CX2_38,time_masked,42,1,0.37585497498512266,0.206296399992425,41570,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\time_masked_best.pt
+fixed_CX2_38,provenance_masked,42,1,0.2085805267095566,0.11597350001102313,41666,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\provenance_masked_best.pt
+fixed_CX2_38,observer_fixed,42,1,0.08671380132436753,0.2800457999983337,16278,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\observer_fixed_best.pt
+fixed_CX2_38,pardon_gated,42,1,0.0880669265985489,0.29834690000279807,16278,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\checkpoints\fixed_CX2_38\pardon_gated_best.pt

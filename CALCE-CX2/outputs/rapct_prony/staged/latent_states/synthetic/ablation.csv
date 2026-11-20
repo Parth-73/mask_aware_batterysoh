@@ -1,0 +1,9 @@
+domain,modes,learnable,synthetic_penalty_mse,seed,epochs,time_range_source,experimental_capacity_recovery_evidence
+synthetic_only,1,False,4.1530688577040564e-06,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,1,True,3.939930593332974e-06,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,2,False,1.0300961548637133e-05,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,2,True,2.7385049523181992e-12,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,4,False,7.824924352917151e-08,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,4,True,7.166758297927345e-10,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,8,False,3.3340132432613245e-08,42,400,declared artificial signal; not CALCE rest distribution,False
+synthetic_only,8,True,2.416254141213159e-10,42,400,declared artificial signal; not CALCE rest distribution,False

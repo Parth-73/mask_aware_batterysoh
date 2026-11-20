@@ -1,0 +1,25 @@
+feature,group,units,definition,raw_measurements,phase,reliability_rule
+ic_peak_height,F1,Ah/V,"max smoothed dQ/dV on [3.80,4.15] V","current,test_s,step_s,voltage",CC,Full interval and reliable monotonic CC curve required
+partial_charge_ah,F1,Ah,"Q(4.0 V)-Q(3.8 V), interpolated on chronological CC charge curve","current,test_s,step_s,voltage",CC,Both voltage crossings required
+partial_dv_dq,F1,V/Ah,0.2 / partial_charge_ah,"current,time,voltage",CC,Capacity must exceed 1e-5 Ah
+ic_peak_voltage,F2,V,"Voltage at largest interior IC peak in [3.80,4.15] V","current,time,voltage",CC,Interior peak and reliable IC curve required
+ic_peak_area,F2,Ah,"Integral of smoothed dQ/dV over fixed [3.80,4.15] V","current,time,voltage",CC,"Full interval required; fixed window, no chemical peak assignment"
+ic_peak_width,F2,V,Width of largest interior peak at half prominence,"current,time,voltage",CC,Interior peak with prominence >=5% height and bounded flanks
+dva_mean,F2,V/Ah,Mean smoothed dV/dQ on uniform Q grid between 3.8 and 4.0 V,"current,time,voltage",CC,Positive capacity span and reliable curve
+dva_peak,F2,V/Ah,Maximum smoothed dV/dQ over same partial-capacity grid,"current,time,voltage",CC,Positive capacity span and reliable curve
+partial_charge_time_s,F2,s,Elapsed active CC time t(4.0)-t(3.8),"current,time,voltage",CC,"Both crossings required, rests excluded"
+cc_duration_s,F2,s,Sum observed step duration for voltage <4.18 V charge samples,"current,test_s,step_s,voltage",CC,No recording gaps or mid-step starts
+cv_duration_s,F2,s,Sum observed durations at voltage >=4.18 V with decaying current,"current,test_s,step_s,voltage",CV,CV voltage range <=0.035 V and current decrease >=20%
+cv_decay_rate_s_inv,F2,1/s,Negative OLS slope of log(I) against cumulative active CV time,"current,time,voltage",CV,"At least 8 CV points, current decay >=20%, R2>=0.8"
+cv_capacity_ah,F2,Ah,Integral I dt at voltage >=4.18 V within verified CV phase,"current,time,voltage",CV,Verified CV and contiguous samples
+historical_ic_peak_shift_v,F3,V,Current IC peak voltage minus first earlier valid reference peak,prior/current charging IC peak,history,First available cycle missing; baseline is strictly earlier
+historical_partial_change_ah,F3,Ah,Current partial Q minus first earlier valid partial Q,prior/current partial charge,history,First available cycle missing; no future information
+resistance_ohm,F3,Ohm,"Median finite positive recorded internal resistance, candidate audit only",resistance,charge,Not a usable input until instrument measurement quality is verified
+historical_resistance_change_ohm,F3,Ohm,Current minus first earlier verified resistance,verified resistance history,history,Unavailable until resistance measurement quality verified
+charge_crate,F3,1/h,Median CC charging current / 1.35 Ah,current,CC,At least 5 CC samples
+charge_protocol_cv,F3,indicator,"One if verified CV phase exists, zero if charge exists without CV","current,time,voltage",charge,Missing if no measured charge
+temperature_c,F3,degC,Mean measured temperature during charging,calibrated temperature sensor,charge,Unavailable until column units and sensor validity verified
+relaxation_60s_v,F3,V,"V(rest+60s)-V(rest start), first post-charge rest","time,voltage,current",post-charge rest,Rest >=60s and near-zero current; not an instantaneous jump
+ic_smoothing_relative_spread,audit,ratio,"(max-min) peak height across SG windows 7,11,15 / median",charging IC curves,CC,All windows available; >0.2 marked unstable
+resistance_recorded_median_ohm,audit,Ohm,Median finite positive resistance readings before verification,resistance,charge,"Descriptive only; values in (0,1) Ohm"
+discharge_crate_median,audit,1/h,Median same-cycle discharge current magnitude / 1.35 Ah,discharge current,discharge,AUDIT ONLY: excluded from predictive inputs to avoid future protocol leakage

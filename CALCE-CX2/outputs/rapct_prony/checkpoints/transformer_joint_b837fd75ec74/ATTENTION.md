@@ -1,0 +1,1 @@
+Attention summaries average heads-independent maps over the final inference minibatch, with dimensions layer/head/query/key. They are descriptive and do not establish causal feature importance. No future cycles can be attended.

@@ -1,0 +1,11 @@
+# Experimental protocol
+
+Seed 42. All raw files and old preprocessing outputs remain unchanged. Run the representative gate before the complete extraction. Checkpoints are keyed by source path, size, modification time and extraction configuration. New extraction logic must increment the configuration version to invalidate checkpoints.
+
+Prediction origin is the end of charging for estimation, and the end of the origin discharge for forecasting/persistence comparisons. Feature candidates use charging samples only. Target-current, target-capacity, discharge-derived proxies and retrospective quantities are excluded from the primary features. Historical variables and observation masks remain separate.
+
+Identifiers define battery-disjoint training/validation/test sets before computing associations. Training outer leave-one-battery-out folds redo feature selection. Inner folds independently check eligibility, fit imputation/scaling, and score SFS subsets. No outer-held-out or test labels select features. mRMR shortlist is bounded at nine for runtime. Ridge drives SFS; HGB compares selected/all features. MLP and exhaustive subset search are not executed. Within-cell cycle samples are serially dependent; p-values are descriptive. No neural architecture performance is claimed. Electrical resistance proxies are omitted because transition timing has not been validated as instantaneous; temperature-adjusted indicators are omitted without a validated compensation model. DVA features remain exploratory. Historical features are exported separately and excluded from the main five.
+
+Forecast windows never cross files, missing episodes or unknown intervals. Episode adjacency requires raw-sample endpoint matching, intervening near-zero-current samples, and consistent operating-step clocks. Long gaps are accepted only when these measurements verify rest; elapsed time alone is insufficient. SOH fractions are the metric unit. Reporting uses per-battery metrics and battery-macro averages. No SOH interpolation or smoothing. Different discharge rates remain a material label confounder.
+
+CADEX absolute chronology, cross-source experiment linkage and comprehensive physical partial-curve robustness remain follow-up work. These outputs are an audited research baseline, not a claim of full acquisition invariance or publication-ready Transformer validation.

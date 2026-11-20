@@ -1,0 +1,4 @@
+model,type,checkpoint,config_id,seed,validation_RMSE_mean_across_seeds,representative_validation_RMSE,parameters,intercept
+ols_last_CC_CV,sklearn.LinearRegression,C:\Projects\Battery_Soh\pre processed ready to use data\three_model_final_results\best_models\ols_last_CC_CV_best.joblib,,,0.01027153152981701,0.01027153152981701,4,0.7888170795205045
+time_transformer,PyTorch,C:\Projects\Battery_Soh\pre processed ready to use data\three_model_final_results\best_models\time_transformer_best.pt,1.0,2026.0,0.011990789467992924,0.011515951573514807,72449,
+direct_transformer,PyTorch,C:\Projects\Battery_Soh\pre processed ready to use data\three_model_final_results\best_models\direct_transformer_best.pt,1.0,42.0,0.013186861424027635,0.011784574554488869,72385,

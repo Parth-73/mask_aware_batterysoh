@@ -1,0 +1,6 @@
+step,feature_added,feature_subset,heldout_rmse,heldout_mae,heldout_r2
+1,charge_throughput_ah,charge_throughput_ah,0.09918966021692063,0.07666876562306876,0.6092213850940174
+2,charge_voltage_span_v,charge_throughput_ah | charge_voltage_span_v,0.06839644178008027,0.050365936073251474,0.8141917462739963
+3,dva_peak,charge_throughput_ah | charge_voltage_span_v | dva_peak,0.06973968157676158,0.05128520531787589,0.8068218937350156
+4,ic_peak_voltage,charge_throughput_ah | charge_voltage_span_v | dva_peak | ic_peak_voltage,0.07768351716939421,0.049939389062319844,0.7603067827397063
+5,cc_duration_s,charge_throughput_ah | charge_voltage_span_v | dva_peak | ic_peak_voltage | cc_duration_s,0.08926497442324922,0.07250228676168227,0.6835098822761889

@@ -1,0 +1,7 @@
+{
+  "training_runs": 45,
+  "test_runs": 6,
+  "png_figures": 59,
+  "pdf_figures": 59,
+  "dpi": 300
+}

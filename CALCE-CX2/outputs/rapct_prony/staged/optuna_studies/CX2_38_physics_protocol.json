@@ -1,0 +1,31 @@
+{
+  "name": "physics",
+  "outer": "CX2_38",
+  "base": {
+    "module": "stage3",
+    "stage": "A4",
+    "pathway": "fusion",
+    "length": 5,
+    "matched20": false,
+    "epochs": 8,
+    "batch_size": 32,
+    "lr": 0.0005,
+    "weight_decay": 0.001,
+    "patience": 20,
+    "warmup": [
+      2,
+      5
+    ],
+    "status": "reduced_budget_nested_pilot",
+    "state_policy": "ordered segments; carry detached state across chunks; initialize unknown gaps"
+  },
+  "inner_validation_batteries": [
+    "CX2_16",
+    "CX2_33"
+  ],
+  "objective": "mean per-inner-battery validation RMSE; only remaining six cells",
+  "sampler": "TPESampler(seed=42)",
+  "pruner": "MedianPruner(startup=2,warmup=1)",
+  "pruning": "last inner model compares battery-macro scores at identical completed epoch",
+  "pilot_trials": 2
+}

@@ -1,0 +1,13 @@
+{
+  "trial_count": 10,
+  "expected_trial_count": 10,
+  "completed_runs_before": 23,
+  "completed_runs_after": 23,
+  "additional_training_runs": 0,
+  "reopened_without_extra_trials": true,
+  "refit_runs": [
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_0b605712b698",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_143930e71344",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\checkpoints\\cnn_refit_7528b86ecdb8"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "same_primary_target_ids": true,
+  "historical_target_count": 8395,
+  "new_target_count": 8395,
+  "historical_epochs": 10,
+  "historical_features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "new_information": "raw voltage-axis Q/dQdV/I plus engineered features",
+  "no_retraining_of_completed_baselines": true,
+  "caution": "Target matching does not equal information or training-budget matching."
+}

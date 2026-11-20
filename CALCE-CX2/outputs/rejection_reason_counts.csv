@@ -1,0 +1,12 @@
+reason,count
+charge_endpoint_incomplete,8093
+discharge_endpoint_nonstandard_or_incomplete,5820
+implausible_discharge_capacity,2813
+missing_discharge,123
+charge_counter_unvalidated,28
+discontinuous_file_boundary,21
+charge_sampling_discontinuity,10
+charge_counter_integral_disagreement,8
+discharge_sampling_discontinuity,3
+missing_charge,1
+source_clock_reversal,1

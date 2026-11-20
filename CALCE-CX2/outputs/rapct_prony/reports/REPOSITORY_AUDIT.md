@@ -1,0 +1,6 @@
+# Repository audit
+The unchanged reconstruction integrates within physical steps, validates counter agreement, rejects ambiguous boundaries and exports all rejection reasons. SOH is raw validated discharge Ah / 1.35. IC uses the measured 3.80-4.15 V domain, 2 mV grid and SG(11,3), with smoothing checks at 7/11/15. DVA follows the existing 3.8-4.0 V partial-capacity rules. The five engineered features are independently MLP encoded.
+
+Original preprocessing holds out CX2_37 for validation; historical LSTM training includes CX2_37 and validates on CX2_36. CX2_38 is historical test. Existing four-model CNN convolves across successive cycles with five features as channels; it is not a raw voltage-curve CNN. Historical metrics cannot be pooled with the new matched raw-coverage cohort. All historical source/config hashes and artifact locations are preserved in data_audit. Existing untracked benchmark files predate this task and are left unchanged.
+
+Raw channel caches reference D:/battery_soh on another machine; rebuild under the isolated output. Acquisition timestamps establish chronology; filenames never do. Temperature logger/current session synchronization remains unverified. Rest after end-of-charge, including the exported relaxation_60s_v feature, is excluded from this prediction contract.

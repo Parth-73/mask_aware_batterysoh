@@ -1,0 +1,10 @@
+{
+  "input_sha256": {
+    "train": "fd5dc165182f1e19445e2b59eb8f63ddf092ebd59c38bc5c98de6478aa89a415",
+    "validation": "d7660fb27575f8939e8d55b1771892bd611f8c042dada331edee05bb406cd659",
+    "test": "ad7c1f39bee4b7d076af3c9f019c86c5ea2498190d7709db29420c218aba9b34"
+  },
+  "paper_sha256": "467b701e004bd68a25aa415cfc5a95443cfd2fdaf8989c898c3023e55e7e128f",
+  "discharge_features_sha256": "f1d413fc5b16cc3f2b81cfed200c2bcebf0ef2ae2aa43f2ddc1c1297cf61f61f",
+  "predictor_target_boundary": "charging and completed-discharge experiments reported separately"
+}

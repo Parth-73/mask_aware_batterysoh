@@ -1,0 +1,15 @@
+{
+  "study": "CX2_38_transformer",
+  "best_trial": 0,
+  "best_inner_battery_macro_rmse": 0.011375269382677269,
+  "parameters": {
+    "freeze_cnn": true
+  },
+  "inner_run_paths": [
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A3_CX2_38_CX2_16_s42_6853afdcd9a4",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A3_CX2_38_CX2_33_s42_0b27db763890"
+  ],
+  "trial_count": 2,
+  "pilot": true,
+  "outer_evaluated": false
+}

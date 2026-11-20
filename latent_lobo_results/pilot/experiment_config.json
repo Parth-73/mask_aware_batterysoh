@@ -1,0 +1,32 @@
+{
+  "mode": "pilot",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "seq_len": 12,
+  "filter": true,
+  "jump_threshold": 0.03,
+  "max_gap_hours": null,
+  "seeds": [
+    42
+  ],
+  "latent_dims": [
+    2,
+    4
+  ],
+  "folds": [
+    "CX2_16",
+    "CX2_35",
+    "CX2_38"
+  ],
+  "max_epochs": 25,
+  "ae_epochs": 20,
+  "lr": 0.001,
+  "batch": 128,
+  "lambda_latent": 0.1,
+  "lambda_align": 0.1
+}

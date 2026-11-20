@@ -1,0 +1,7 @@
+fold,model,predictions_file
+fixed_CX2_38,ols_cc_cv,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_ols_cc_cv.csv
+fixed_CX2_38,direct_masked,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_direct_masked.csv
+fixed_CX2_38,time_masked,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_time_masked.csv
+fixed_CX2_38,provenance_masked,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_provenance_masked.csv
+fixed_CX2_38,observer_fixed,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_observer_fixed.csv
+fixed_CX2_38,pardon_gated,C:\Projects\Battery_Soh\pre processed ready to use data\pardon_soh_results\smoke\predictions\fixed_CX2_38_pardon_gated.csv

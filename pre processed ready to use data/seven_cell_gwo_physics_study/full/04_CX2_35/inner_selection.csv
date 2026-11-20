@@ -1,0 +1,7 @@
+heldout,inner_val,model,variant,seed,validation_score,lambda_mono,lambda_bound,checkpoint
+CX2_35,CX2_36,direct_transformer,baseline,42,0.011963106243293676,0.0,0.0,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\direct_transformer_baseline_seed42.pt
+CX2_35,CX2_36,direct_transformer,physics_gwo,42,0.011963341086490172,0.9247657852197445,0.8987374437077027,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\direct_transformer_physics_gwo_seed42.pt
+CX2_35,CX2_36,time_transformer,baseline,42,0.0123575188132611,0.0,0.0,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\time_transformer_baseline_seed42.pt
+CX2_35,CX2_36,time_transformer,physics_gwo,42,0.012487194289143959,1.2324324747065858,0.16054636381251408,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\time_transformer_physics_gwo_seed42.pt
+CX2_35,CX2_36,ols_last_CC_CV,baseline,42,0.010064347186115883,0.0,0.0,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\ols_last_CC_CV_baseline.joblib
+CX2_35,CX2_36,ols_last_CC_CV,physics_gwo,42,0.010064347186115883,0.0,0.0,C:\Projects\Battery_Soh\pre processed ready to use data\seven_cell_gwo_physics_study\full\04_CX2_35\ols_last_CC_CV_physics_gwo.joblib

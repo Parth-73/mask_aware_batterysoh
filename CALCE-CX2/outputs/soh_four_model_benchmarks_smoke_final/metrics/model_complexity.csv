@@ -1,0 +1,5 @@
+configuration_id,dataset,fold,seed,architecture,feature_set,length,experiment,physics_weight,reg_weight,matched_targets,parameter_count,training_seconds,inference_ms_per_sample,peak_gpu_memory_mb
+cnn_pinn_five_L5_CX2_16_seed42_p0.1_r0.1_c4681b3d7c35,CALCE-CX2 frozen validated exports,CX2_16,42,cnn_pinn,five,5,primary,0.1,0.1,False,6850,0.649108099998557,0.02265546868329693,65.61669921875
+lstm_five_L5_CX2_16_seed42_p0.0_r0.0_e927924944eb,CALCE-CX2 frozen validated exports,CX2_16,42,lstm,five,5,primary,0.0,0.0,False,18241,1.205440699995961,0.02156484379156609,76.21875
+lstm_pinn_five_L5_CX2_16_seed42_p0.1_r0.1_a34dc5849243,CALCE-CX2 frozen validated exports,CX2_16,42,lstm_pinn,five,5,primary,0.1,0.1,False,18306,0.6952957000030437,0.02466953128532623,77.2890625
+transformer_five_L5_CX2_16_seed42_p0.0_r0.0_7721534b42c9,CALCE-CX2 frozen validated exports,CX2_16,42,transformer,five,5,primary,0.0,0.0,False,67393,0.5230632000020705,0.057120312476399704,71.9990234375

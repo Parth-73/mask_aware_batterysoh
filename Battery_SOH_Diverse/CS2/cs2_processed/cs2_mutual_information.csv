@@ -1,0 +1,14 @@
+feature,mutual_information,n
+charge_duration_s,1.103563676176547,64
+cc_duration_s,1.44847761646248,64
+cv_duration_s,1.106845101931642,64
+charge_throughput_ah,1.7765360363509006,64
+cc_throughput_ah,1.4360324661267045,64
+cv_throughput_ah,1.24491787548618,64
+cc_mean_current_a,0.05009386187632092,64
+cv_mean_current_a,0.628416497151906,64
+cc_start_voltage,1.4979930569640572,64
+charge_voltage_mean,1.0237686888161197,64
+charge_voltage_std,1.3216233560105994,64
+time_3p9_to_4p1_s,1.4437728990586087,49
+ir_step_proxy_ohm,0.9637696138162837,64

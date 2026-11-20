@@ -1,0 +1,17 @@
+battery,view,model,training,rmse,mae,r2,n
+CS2_7,complete,ridge,complete_and_raw_partial_charge_views,0.3928630705265983,0.2737700382425658,-106697.94520014492,5
+CS2_7,prefix_50_percent_samples,ridge,complete_and_raw_partial_charge_views,0.3838853493680496,0.2439066984146765,-101877.08870684054,5
+CS2_7,prefix_80_percent_samples,ridge,complete_and_raw_partial_charge_views,0.3902478412635847,0.2659318282563816,-105282.11635753883,5
+CS2_7,suffix_50_percent_samples,ridge,complete_and_raw_partial_charge_views,0.838937305254133,0.8389364500311304,-486559.36233598134,5
+CS2_9,complete,ridge,complete_and_raw_partial_charge_views,0.09677828377255765,0.09661985766373064,-366.4192008603555,20
+CS2_9,prefix_50_percent_samples,ridge,complete_and_raw_partial_charge_views,0.09601111324749245,0.09581742583853708,-360.61715617146376,20
+CS2_9,prefix_80_percent_samples,ridge,complete_and_raw_partial_charge_views,0.09656512219864105,0.09639729954049149,-364.8024455392893,20
+CS2_9,suffix_50_percent_samples,ridge,complete_and_raw_partial_charge_views,0.09754021178560708,0.09740959440790656,-372.22730101011433,20
+CS2_7,complete,hgb,complete_and_raw_partial_charge_views,0.3968826469221624,0.21316382236394188,-108892.49418650822,5
+CS2_7,prefix_50_percent_samples,hgb,complete_and_raw_partial_charge_views,0.3926847390471662,0.19629617196378832,-106601.09994509812,5
+CS2_7,prefix_80_percent_samples,hgb,complete_and_raw_partial_charge_views,0.3968826469221624,0.21316382236394188,-108892.49418650822,5
+CS2_7,suffix_50_percent_samples,hgb,complete_and_raw_partial_charge_views,0.7020474408891014,0.70204641067818,-340729.2045424579,5
+CS2_9,complete,hgb,complete_and_raw_partial_charge_views,0.23445577939914064,0.23440141014136057,-2155.392939269443,20
+CS2_9,prefix_50_percent_samples,hgb,complete_and_raw_partial_charge_views,0.23445577939914064,0.23440141014136057,-2155.392939269443,20
+CS2_9,prefix_80_percent_samples,hgb,complete_and_raw_partial_charge_views,0.23445577939914064,0.23440141014136057,-2155.392939269443,20
+CS2_9,suffix_50_percent_samples,hgb,complete_and_raw_partial_charge_views,0.23445577939914064,0.23440141014136057,-2155.392939269443,20

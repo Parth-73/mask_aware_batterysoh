@@ -1,0 +1,7 @@
+{
+  "verified": false,
+  "duration_available": false,
+  "reason": "Aggregate exports lack preceding observed rest event boundaries and state coverage. Recording gaps and relaxation_60s_v do not establish preceding rest duration.",
+  "missing_policy": "NaN; never zero imputed",
+  "optional_six_feature_experiment": "not supported"
+}

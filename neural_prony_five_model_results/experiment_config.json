@@ -1,0 +1,103 @@
+{
+  "csv_paths": {
+    "train": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\train_final_filtered.csv",
+    "validation": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\validation.csv",
+    "test": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\test.csv"
+  },
+  "input_sha256": {
+    "train": "c735c53e29bcbcfa2bec84bf91c3ff82959bc846de057725c4ea77f37fb10c3b",
+    "validation": "d7660fb27575f8939e8d55b1771892bd611f8c042dada331edee05bb406cd659",
+    "test": "ad7c1f39bee4b7d076af3c9f019c86c5ea2498190d7709db29420c218aba9b34"
+  },
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "target": "soh",
+  "seq_len": 12,
+  "hidden": 64,
+  "memory_dim": 32,
+  "n_prony": 8,
+  "tau_min_cycles": 1.0,
+  "tau_max_cycles": 64.0,
+  "epochs": 80,
+  "patience": 15,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "physics_weight": 0.5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "max_train_batches": null,
+  "device": "cuda",
+  "window_counts": {
+    "train": 3869,
+    "validation": 918,
+    "test": 752
+  },
+  "experiments": [
+    {
+      "name": "pinn_mlp_prony",
+      "family": "pinn_mlp",
+      "mode": "learned"
+    },
+    {
+      "name": "lstm_prony",
+      "family": "lstm",
+      "mode": "learned"
+    },
+    {
+      "name": "lstm_pinn_prony",
+      "family": "lstm_pinn",
+      "mode": "learned"
+    },
+    {
+      "name": "cnn_pinn_prony",
+      "family": "cnn_pinn",
+      "mode": "learned"
+    },
+    {
+      "name": "transformer_prony",
+      "family": "transformer",
+      "mode": "learned"
+    },
+    {
+      "name": "pinn_mlp",
+      "family": "pinn_mlp",
+      "mode": "none"
+    },
+    {
+      "name": "lstm",
+      "family": "lstm",
+      "mode": "none"
+    },
+    {
+      "name": "lstm_pinn",
+      "family": "lstm_pinn",
+      "mode": "none"
+    },
+    {
+      "name": "cnn_pinn",
+      "family": "cnn_pinn",
+      "mode": "none"
+    },
+    {
+      "name": "transformer",
+      "family": "transformer",
+      "mode": "none"
+    },
+    {
+      "name": "transformer_prony_fixed",
+      "family": "transformer",
+      "mode": "fixed"
+    }
+  ],
+  "target_protocol": "current endpoint measured SOH; exact consecutive-cycle windows",
+  "selection": "minimum validation endpoint MSE"
+}

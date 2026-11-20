@@ -1,0 +1,5 @@
+{
+  "path": "outputs/rapct_prony/checkpoints/cnn_f3fcbd374e6a/best.pt",
+  "sha256": "144ed369a5354798238f21f1dc48451ffb2d5f83ad16dda94565cdded1bb39e3",
+  "optimizer": "new_adamw_not_exact_resume"
+}

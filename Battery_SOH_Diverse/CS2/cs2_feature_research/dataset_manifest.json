@@ -1,0 +1,256 @@
+{
+  "implementation_sha256": {
+    "cs2_research_pipeline.py": "2ba00905fe9c22514ecb62aa7287545cdfe599f38378bb11248051acd9cf95fe",
+    "cs2_research_analysis.py": "8d12cc5ef5b769e2830e6df728e7b83b79cad1272ebec2ccde385f71784c9e89",
+    "cs2_continuity.py": "97e5ee9d8ac9a410d05c96f8252386988e2724992ed26c11aa5f7897d0b4c1a6",
+    "cs2_statistics.py": "647d910c742fc062274ca23338c33915efdff15e7290640c51b17098a8ea6900",
+    "cs2_acquisition_robustness.py": "6351ea40f5c54082e6c48de61a508b9268fea57725b9136bd28f541108853943",
+    "cs2_history_robustness.py": "36195db2b1b5d432809f2d1d9c15193871df03077cd8706ef652ae167f25ecea",
+    "cs2_partial_views.py": "59c2c45cd88b8baa57572cb32f101286c6be339a54f8caf9a82459c314242ddb",
+    "finalize_cs2_research.py": "bcd642815380b695eb3aa8bbb755dae2d295fb56b20d0e61519f33a1aaf6264c"
+  },
+  "status": "executed_conservative_pipeline",
+  "raw_files": 606,
+  "processed_batteries": 15,
+  "batteries_with_extracted_episodes": 15,
+  "validated_soh_labels": 7793,
+  "extracted_features": 37,
+  "features_with_any_observed_value": 37,
+  "eligible_features": [
+    "charge_duration_s",
+    "charge_throughput_ah",
+    "charge_energy_wh",
+    "charge_voltage_mean_v",
+    "charge_voltage_std_v",
+    "cc_duration_s",
+    "cc_throughput_ah",
+    "cc_current_mean_a",
+    "cc_current_std_a",
+    "cc_initial_voltage_v",
+    "cc_final_voltage_v",
+    "cc_voltage_slope_v_s",
+    "cc_voltage_increase_v",
+    "cv_duration_s",
+    "cv_throughput_ah",
+    "cv_current_mean_a",
+    "cv_current_decay_a_s",
+    "cv_duration_ratio",
+    "cv_throughput_ratio",
+    "time_3p9_4p1_s",
+    "throughput_bracket_3p9_4p1_ah",
+    "charge_c_rate"
+  ],
+  "selected_features": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "input_columns": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "estimation_target": "soh",
+  "forecasting_target": "target_soh",
+  "selection_task": "one_cycle_forecasting",
+  "selection_training_rows": 6370,
+  "train_batteries": [
+    "CS2_24",
+    "CS2_25",
+    "CS2_3",
+    "CS2_33",
+    "CS2_34",
+    "CS2_35",
+    "CS2_36",
+    "CS2_37",
+    "CS2_38"
+  ],
+  "validation_batteries": [
+    "CS2_5",
+    "CS2_6"
+  ],
+  "test_batteries": [
+    "CS2_7",
+    "CS2_9"
+  ],
+  "outer_cv": [
+    {
+      "train": [
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_24"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_25"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_3"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_33"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_34"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_35"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "heldout": "CS2_36"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_38"
+      ],
+      "heldout": "CS2_37"
+    },
+    {
+      "train": [
+        "CS2_24",
+        "CS2_25",
+        "CS2_3",
+        "CS2_33",
+        "CS2_34",
+        "CS2_35",
+        "CS2_36",
+        "CS2_37"
+      ],
+      "heldout": "CS2_38"
+    }
+  ],
+  "limitations": [
+    "CADEX uses independently cross-checked Duration seconds; absolute timestamps unavailable",
+    "Source boundaries not merged without verified experiment continuity",
+    "SOH depends on discharge rate; different protocols not normalized",
+    "Forecasting restricted to observed same-file adjacency",
+    "DVA exploratory, excluded from selection",
+    "No Transformer, PINN, GWO or AIDO neural architecture trained",
+    "Feature masking does not establish physical acquisition invariance"
+  ],
+  "eligible_features_for_selection": [
+    "charge_duration_s",
+    "charge_throughput_ah",
+    "charge_energy_wh",
+    "charge_voltage_mean_v",
+    "charge_voltage_std_v",
+    "cc_duration_s",
+    "cc_throughput_ah",
+    "cc_current_mean_a",
+    "cc_current_std_a",
+    "cc_initial_voltage_v",
+    "cc_final_voltage_v",
+    "cc_voltage_slope_v_s",
+    "cc_voltage_increase_v",
+    "cv_duration_s",
+    "cv_throughput_ah",
+    "cv_current_mean_a",
+    "cv_current_decay_a_s",
+    "cv_duration_ratio",
+    "cv_throughput_ratio",
+    "time_3p9_4p1_s",
+    "throughput_bracket_3p9_4p1_ah",
+    "charge_c_rate"
+  ],
+  "selection_status": "provisional_generalization_not_established",
+  "artifact_validation": {
+    "validated_labels": 7793,
+    "unique_batteries": 15,
+    "selected_features": [
+      "cc_throughput_ah",
+      "throughput_bracket_3p9_4p1_ah",
+      "cc_voltage_increase_v",
+      "cc_voltage_slope_v_s",
+      "charge_voltage_mean_v"
+    ],
+    "all_label_endpoints_pass": true,
+    "all_available_counter_crosschecks_pass": true,
+    "disjoint_splits": true,
+    "forecast_horizon_indices_pass": true,
+    "retained_extreme_soh_labels": 569,
+    "unresolved_cadex_files": 24,
+    "read_error_files": 0
+  },
+  "output_directory": "C:\\Projects\\Battery_SOH_Diverse\\CS2\\cs2_feature_research",
+  "notebook": "C:\\Projects\\Battery_SOH_Diverse\\CALCE_CS2_Feature_Research.ipynb",
+  "physical_partial_observation_executed": true,
+  "historical_observation_robustness_executed": true,
+  "source_snapshot_sha256": "9de54e221d174228c32fd7d67f8b8db5d57c8977b3cccef5153076410e1aa6c8"
+}

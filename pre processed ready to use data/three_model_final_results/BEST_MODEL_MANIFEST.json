@@ -1,0 +1,103 @@
+{
+  "winner_model": "ols_last_CC_CV",
+  "winner_checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\three_model_final_results\\best_models\\ols_last_CC_CV_best.joblib",
+  "selection_metric": "mean validation RMSE across selected forecast horizons",
+  "selection_horizons": [
+    1,
+    3,
+    5
+  ],
+  "task": "future_cycle_soh_forecasting",
+  "note": "Only best of searched configs. Test is for reporting, not selection.",
+  "run_mode": "full",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "target": "soh",
+  "lookback": 12,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "max_gap_hours": 24.0,
+  "train_filename": "train_final_filtered.csv",
+  "validation_filename": "validation.csv",
+  "test_filename": "test.csv",
+  "scaler_mean": [
+    4298.060418734318,
+    4122.049626362393,
+    1.3696248925710997,
+    3.9417016905071365,
+    0.12537655799860806
+  ],
+  "scaler_scale": [
+    902.5775863506382,
+    638.8938261484406,
+    1.0761168301389503,
+    0.03672521886460232,
+    0.019442173592708147
+  ],
+  "dt_scale_hours": 3.885,
+  "all_models": [
+    {
+      "model": "direct_transformer",
+      "type": "PyTorch",
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\three_model_final_results\\best_models\\direct_transformer_best.pt",
+      "config_id": 1,
+      "seed": 42,
+      "validation_RMSE_mean_across_seeds": 0.013186861424027635,
+      "representative_validation_RMSE": 0.011784574554488869,
+      "hyperparameters": {
+        "hidden": 64,
+        "layers": 2,
+        "heads": 4,
+        "ff_mult": 2,
+        "dropout": 0.1,
+        "lr": 0.0005,
+        "weight_decay": 0.0001
+      },
+      "parameters": 72385
+    },
+    {
+      "model": "time_transformer",
+      "type": "PyTorch",
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\three_model_final_results\\best_models\\time_transformer_best.pt",
+      "config_id": 1,
+      "seed": 2026,
+      "validation_RMSE_mean_across_seeds": 0.011990789467992924,
+      "representative_validation_RMSE": 0.011515951573514807,
+      "hyperparameters": {
+        "hidden": 64,
+        "layers": 2,
+        "heads": 4,
+        "ff_mult": 2,
+        "dropout": 0.1,
+        "lr": 0.0005,
+        "weight_decay": 0.0001
+      },
+      "parameters": 72449
+    },
+    {
+      "model": "ols_last_CC_CV",
+      "type": "sklearn.LinearRegression",
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\three_model_final_results\\best_models\\ols_last_CC_CV_best.joblib",
+      "validation_RMSE_mean_across_seeds": 0.01027153152981701,
+      "representative_validation_RMSE": 0.01027153152981701,
+      "hyperparameters": {
+        "fit_intercept": true
+      },
+      "coefficients": [
+        0.12285045177727938,
+        0.014508312854630683,
+        -0.0013826075687461078
+      ],
+      "intercept": 0.7888170795205045,
+      "parameters": 4
+    }
+  ]
+}

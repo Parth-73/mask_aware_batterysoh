@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "completed_runs": 264,
+  "planned_runs": 264,
+  "validated_prediction_rows": 1816896,
+  "matched_cohort_groups": 48,
+  "checks": [
+    "checkpoint SHA256",
+    "training-only scaling and disjoint batteries",
+    "matched cohorts across architectures/features/seeds/sequence ablations",
+    "original consecutive window IDs and causal final target",
+    "finite saved losses",
+    "validation-only best epoch",
+    "all six primary and secondary metric formulas, units and prediction algebra",
+    "rest remains unverified and missing"
+  ]
+}

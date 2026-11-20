@@ -1,0 +1,11 @@
+variant,RMSE
+trend_residual_huber_gwo,0.31321558356285095
+pinn_mse_fixed,0.3152117331822713
+transformer_mse,0.3152126173178355
+pinn_huber_gradbalance,0.3321100076039632
+pinn_huber_smooth_only,0.3322693506876628
+pinn_huber_gwo_horizon,0.3323108454545339
+pinn_huber_random_horizon,0.3323108454545339
+pinn_huber_gwo_global,0.3323108454545339
+pinn_huber_fixed,0.33234885334968567
+pinn_huber_mono_only,0.33234886328379315

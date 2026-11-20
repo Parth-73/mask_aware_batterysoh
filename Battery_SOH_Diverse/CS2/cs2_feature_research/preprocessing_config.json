@@ -1,0 +1,34 @@
+{
+  "version": 4,
+  "seed": 42,
+  "nominal_capacity_ah": 1.1,
+  "rest_current_a": 0.01,
+  "active_current_a": 0.03,
+  "max_interval_s": 120,
+  "full_charge_v": 4.18,
+  "full_discharge_end_v": 2.72,
+  "minimum_discharge_points": 12,
+  "capacity_agreement_fraction": 0.03,
+  "metadata_url": "https://calce.umd.edu/battery-data",
+  "continuity_audit_version": 1,
+  "cadex_clock_ratio": 60,
+  "cadex_max_clock_residual_s": 5,
+  "minimum_feature_availability": 0.8,
+  "minimum_supporting_batteries": 3,
+  "minimum_valid_per_supporting_battery": 20,
+  "minimum_unique_values": 9,
+  "mrmr_redundancy_penalty": 0.65,
+  "shortlist_size": 9,
+  "maximum_selected_redundancy": 0.98,
+  "ridge_alpha": 10,
+  "hgb": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 5
+  },
+  "forecast_horizons": [
+    1,
+    3,
+    5
+  ]
+}

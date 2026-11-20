@@ -1,0 +1,16 @@
+{
+  "study": "CX2_38_cnn",
+  "best_trial": 1,
+  "best_inner_battery_macro_rmse": 0.018549947136927057,
+  "parameters": {
+    "channels": 16,
+    "embedding": 64
+  },
+  "inner_run_paths": [
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A2_CX2_38_CX2_16_s42_be081d999d0d",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A2_CX2_38_CX2_33_s42_27d0d9f2a8e4"
+  ],
+  "trial_count": 2,
+  "pilot": true,
+  "outer_evaluated": false
+}

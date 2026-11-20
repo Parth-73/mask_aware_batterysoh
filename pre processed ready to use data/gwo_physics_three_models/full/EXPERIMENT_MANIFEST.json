@@ -1,0 +1,135 @@
+{
+  "task": "next_cycle_soh_forecasting",
+  "run_mode": "full",
+  "dataset": "C:\\Projects\\Battery_Soh\\pre processed ready to use data",
+  "train_file": "train_final_filtered.csv",
+  "validation_file": "validation.csv",
+  "test_file": "test.csv",
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "lookback": 12,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "dt_scale_hours": 3.885,
+  "max_observed_gap_hours": 24.0,
+  "soh_bounds": [
+    0.0,
+    1.1
+  ],
+  "backbone_configs": {
+    "direct_transformer": {
+      "hidden": 48,
+      "layers": 2,
+      "heads": 4,
+      "ff_mult": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "time_transformer": {
+      "hidden": 48,
+      "layers": 2,
+      "heads": 4,
+      "ff_mult": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    }
+  },
+  "gwo_lower": [
+    0.0,
+    0.0
+  ],
+  "gwo_upper": [
+    2.0,
+    1.0
+  ],
+  "gwo_iterations": 4,
+  "gwo_population": 6,
+  "gwo_candidate_epochs": 10,
+  "gwo_results": {
+    "direct_transformer": [
+      2.0,
+      0.9679457106988417
+    ],
+    "time_transformer": [
+      0.8604529164837147,
+      0.7974263236901743
+    ],
+    "ols_last_CC_CV": [
+      0.0,
+      0.0
+    ]
+  },
+  "selected_models": [
+    {
+      "model": "direct_transformer",
+      "variant": "baseline",
+      "selected_seed": 42,
+      "validation_score": 0.014555228058786222,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\direct_transformer_baseline_seed42.pt",
+      "lambda_mono": 0.0,
+      "lambda_bound": 0.0
+    },
+    {
+      "model": "direct_transformer",
+      "variant": "physics_gwo",
+      "selected_seed": 42,
+      "validation_score": 0.014344530439631091,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\direct_transformer_physics_gwo_seed42.pt",
+      "lambda_mono": 2.0,
+      "lambda_bound": 0.9679457106988417
+    },
+    {
+      "model": "time_transformer",
+      "variant": "baseline",
+      "selected_seed": 123,
+      "validation_score": 0.012611191471364356,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\time_transformer_baseline_seed123.pt",
+      "lambda_mono": 0.0,
+      "lambda_bound": 0.0
+    },
+    {
+      "model": "time_transformer",
+      "variant": "physics_gwo",
+      "selected_seed": 123,
+      "validation_score": 0.015663173991202716,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\time_transformer_physics_gwo_seed123.pt",
+      "lambda_mono": 0.8604529164837147,
+      "lambda_bound": 0.7974263236901743
+    },
+    {
+      "model": "ols_last_CC_CV",
+      "variant": "baseline",
+      "selected_seed": 42,
+      "validation_score": 0.010120542478611565,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\ols_last_CC_CV_baseline.joblib",
+      "lambda_mono": 0.0,
+      "lambda_bound": 0.0
+    },
+    {
+      "model": "ols_last_CC_CV",
+      "variant": "physics_gwo",
+      "selected_seed": 42,
+      "validation_score": 0.010120542478611565,
+      "checkpoint": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\gwo_physics_three_models\\full\\checkpoints\\ols_last_CC_CV_physics_gwo.joblib",
+      "lambda_mono": 0.0,
+      "lambda_bound": 0.0
+    }
+  ],
+  "limitations": [
+    "No calibrated battery PDE; soft empirical priors only",
+    "No known rest inferred from timestamps",
+    "One validation and test cell; cross-battery LOBO still required",
+    "GWO may select zero weights",
+    "Prior held-out test results have already been viewed in this research"
+  ]
+}

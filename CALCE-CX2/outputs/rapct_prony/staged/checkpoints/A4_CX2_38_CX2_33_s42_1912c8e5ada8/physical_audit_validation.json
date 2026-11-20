@@ -1,0 +1,11 @@
+{
+  "valid_transitions": 1038,
+  "negative_increment_fraction": 0.0,
+  "proxy_consistency_mse": 8.819522190606222e-05,
+  "observation_boundary_fraction": 0.0,
+  "minimum_rate": 0.0003569332475308329,
+  "reference_range": [
+    1.0282392501831055,
+    1.0282392501831055
+  ]
+}

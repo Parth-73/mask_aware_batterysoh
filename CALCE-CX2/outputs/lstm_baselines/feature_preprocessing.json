@@ -1,0 +1,48 @@
+{
+  "method": "StandardScaler",
+  "feature_order": [
+    "ic_peak_height",
+    "partial_charge_ah",
+    "partial_dv_dq",
+    "ic_peak_area",
+    "ic_peak_voltage",
+    "ic_peak_width",
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak"
+  ],
+  "mean": [
+    3.0672716546788403,
+    0.4177888153807387,
+    0.5306196817751967,
+    0.7073381575250397,
+    3.9417471116816274,
+    0.1255316064574028,
+    4285.277332768784,
+    4144.20631126361,
+    1.3693831891289687
+  ],
+  "scale": [
+    0.8689955348755285,
+    0.11604430005038681,
+    0.20762934871502967,
+    0.142246346903919,
+    0.036528642128679706,
+    0.019419927183578635,
+    905.4436053924217,
+    667.0345761533706,
+    1.071112002956
+  ],
+  "fit_split": "train",
+  "fit_batteries": [
+    "CX2_16",
+    "CX2_33",
+    "CX2_34",
+    "CX2_35",
+    "CX2_37"
+  ],
+  "fit_cycle_count": 7790,
+  "fit_cycle_ids_sha256": "c7ad0c3bc0bf94b2311c1b6efc63d15ac21a04f216cd5f28aaf791b40fea69b1",
+  "imputation": "none; common complete cases",
+  "target_scaling": "none; fraction"
+}

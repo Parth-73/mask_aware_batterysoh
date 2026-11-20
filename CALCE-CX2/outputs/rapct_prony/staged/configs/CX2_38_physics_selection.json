@@ -1,0 +1,16 @@
+{
+  "study": "CX2_38_physics",
+  "best_trial": 1,
+  "best_inner_battery_macro_rmse": 0.013740212833889608,
+  "parameters": {
+    "physics_weight": 0.01,
+    "smooth_weight": 0.001
+  },
+  "inner_run_paths": [
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A4_CX2_38_CX2_16_s42_dc74618f7dc9",
+    "C:\\Projects\\Battery_Soh\\benchmark-repository\\CALCE-CX2\\outputs\\rapct_prony\\staged\\checkpoints\\A4_CX2_38_CX2_33_s42_1912c8e5ada8"
+  ],
+  "trial_count": 2,
+  "pilot": true,
+  "outer_evaluated": false
+}

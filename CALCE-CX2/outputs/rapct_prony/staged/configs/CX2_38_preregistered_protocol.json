@@ -1,0 +1,86 @@
+{
+  "outer": "CX2_38",
+  "stage1_epochs": 15,
+  "stage2_epochs": 15,
+  "stage3_epochs": 35,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "pilot": true,
+  "requested_full_outer_folds": 7,
+  "executed_outer_folds": 1,
+  "search_spaces": {
+    "cnn_channels": [
+      16,
+      32,
+      64
+    ],
+    "cnn_embedding": [
+      32,
+      64,
+      128
+    ],
+    "transformer_d_model": [
+      32,
+      64,
+      128
+    ],
+    "transformer_heads": [
+      2,
+      4,
+      8
+    ],
+    "transformer_layers": [
+      1,
+      2,
+      3
+    ],
+    "transformer_dropout": [
+      0.05,
+      0.3
+    ],
+    "ffn": [
+      128,
+      256
+    ],
+    "lengths": [
+      5,
+      10,
+      20
+    ],
+    "physics_weight": [
+      0.0,
+      1e-05,
+      0.1
+    ],
+    "memory_weight": [
+      0.0,
+      1e-05,
+      0.1
+    ],
+    "prony_modes": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "lr": [
+      0.0001,
+      0.001
+    ],
+    "weight_decay": [
+      1e-06,
+      0.01
+    ],
+    "batch": [
+      16,
+      32,
+      64
+    ]
+  },
+  "bounded_search": "sequential component subsets; two startup trials each in this resource-limited pilot",
+  "recovery": "experimental A6-A8 withheld by measured-rest feasibility; synthetic implementation/testing only",
+  "outer_policy": "no new outer predictions until all stage configurations are frozen"
+}

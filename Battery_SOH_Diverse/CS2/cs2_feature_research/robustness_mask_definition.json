@@ -1,0 +1,15 @@
+{
+  "missing_cc": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "missing_cv": [
+    "charge_voltage_mean_v"
+  ],
+  "random_feature_probability": 0.25,
+  "training": "Complete/random/CC/CV/contiguous missing augmentation; identical across Ridge/HGB",
+  "interpretation": "CC/CV masks remove all selected features that require the missing phase, including aggregate charging features. This is feature masking; raw partial charging is a separate experiment."
+}

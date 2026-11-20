@@ -1,0 +1,18 @@
+{
+  "validated_labels": 7793,
+  "unique_batteries": 15,
+  "selected_features": [
+    "cc_throughput_ah",
+    "throughput_bracket_3p9_4p1_ah",
+    "cc_voltage_increase_v",
+    "cc_voltage_slope_v_s",
+    "charge_voltage_mean_v"
+  ],
+  "all_label_endpoints_pass": true,
+  "all_available_counter_crosschecks_pass": true,
+  "disjoint_splits": true,
+  "forecast_horizon_indices_pass": true,
+  "retained_extreme_soh_labels": 569,
+  "unresolved_cadex_files": 24,
+  "read_error_files": 0
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "run": "mlp_031601885824",
+    "max_absolute_reload_difference": 1.4770812994946425e-07,
+    "device": "cpu",
+    "reference_device": "cuda"
+  },
+  {
+    "run": "transformer_joint_b837fd75ec74",
+    "max_absolute_reload_difference": 1.229418945536409e-07,
+    "device": "cpu",
+    "reference_device": "cuda"
+  },
+  {
+    "run": "physics_guided_f10a5595471a",
+    "max_absolute_reload_difference": 8.243255611439793e-08,
+    "device": "cpu",
+    "reference_device": "cuda"
+  }
+]

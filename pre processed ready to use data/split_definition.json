@@ -1,0 +1,19 @@
+{
+  "splits": {
+    "train": [
+      "CX2_16",
+      "CX2_33",
+      "CX2_34",
+      "CX2_35",
+      "CX2_37"
+    ],
+    "validation": [
+      "CX2_36"
+    ],
+    "test": [
+      "CX2_38"
+    ]
+  },
+  "source": "outputs\\lstm_baselines\\experiment_config.json",
+  "note": "Frozen historical LSTM benchmark split; independent of the currently edited outputs/battery_splits.json. Not untouched external validation."
+}

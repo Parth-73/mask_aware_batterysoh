@@ -1,0 +1,2 @@
+fold,model,seed,val_RMSE_mean_horizons
+fixed_CX2_38,transformer,42,0.01575565959016482

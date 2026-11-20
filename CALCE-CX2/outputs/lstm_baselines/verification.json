@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "unit_tests_passed": 27,
+  "training_runs": 45,
+  "test_runs": 6,
+  "model_checkpoints": 45,
+  "png_figures": 59,
+  "dpi": 300,
+  "source_files_preserved": true,
+  "all_prediction_metrics_recomputed": true,
+  "source_code_hashes_match": true,
+  "train_only_preprocessing": true,
+  "all_window_ordinals_and_batteries_verified": true,
+  "attention_normalized": true,
+  "frozen_test_selection_and_checkpoint_hashes_verified": true
+}

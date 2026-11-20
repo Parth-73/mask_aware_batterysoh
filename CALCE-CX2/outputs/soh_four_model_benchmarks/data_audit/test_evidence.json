@@ -1,0 +1,11 @@
+﻿{
+    "status":  "passed",
+    "total_unit_tests":  44,
+    "preserved_existing_tests":  35,
+    "new_benchmark_tests":  9,
+    "final_code_cuda_smoke_runs":  4,
+    "command":  "C:\\Users\\parth\\anaconda3\\python.exe -B -m unittest discover -s tests -v",
+    "smoke_output":  "outputs/soh_four_model_benchmarks_smoke_final",
+    "full_real_data_reference_window_audit_candidates":  12478,
+    "full_real_data_reference_window_audit_exact_match":  true
+}

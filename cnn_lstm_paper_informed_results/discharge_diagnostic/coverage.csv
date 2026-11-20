@@ -1,0 +1,4 @@
+split,original_rows,feature_rows,windows
+train,7790,7677,3100
+validation,1743,1704,655
+test,1477,1458,574

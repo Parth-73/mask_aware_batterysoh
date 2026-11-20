@@ -1,0 +1,30 @@
+{
+  "task": "next-cycle SOH forecasting",
+  "input_cycle_window": 12,
+  "current_cycle_input_features_available": false,
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "train_csv": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\train_final_filtered.csv",
+  "validation_csv": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\validation.csv",
+  "test_csv": "C:\\Projects\\Battery_Soh\\pre processed ready to use data\\test.csv",
+  "max_gap_hours": null,
+  "latent_dim": 4,
+  "d_model": 64,
+  "layers": 2,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs": 80,
+  "ae_epochs": 40,
+  "lambda_latent": 0.1,
+  "lambda_align": 0.1,
+  "device": "cuda",
+  "caveat": "Inspired by LatentTSF; not a faithful author-code reproduction. No measured-SOH smoothing; no rest labels."
+}

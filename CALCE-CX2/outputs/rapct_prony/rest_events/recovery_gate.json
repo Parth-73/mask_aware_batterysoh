@@ -1,0 +1,7 @@
+{
+  "experimental_recovery_enabled": false,
+  "usable_state_transitions": 0,
+  "reason": "All retained histories contain uncertain acquisition gaps; never assume unobserved rest dynamics.",
+  "permitted": "synthetic single_mode_and_multi_mode_memory_tests_only",
+  "future_resolution": "document physically defensible transitions through sparse CV logging or obtain independently continuous rest records"
+}

@@ -1,0 +1,31 @@
+{
+  "features": [
+    "cc_duration_s",
+    "cv_duration_s",
+    "dva_peak",
+    "ic_peak_voltage",
+    "ic_peak_width"
+  ],
+  "target": "soh",
+  "target_units": "fraction",
+  "raw_feature_units": {
+    "cc_duration_s": "s",
+    "cv_duration_s": "s",
+    "dva_peak": "V/Ah",
+    "ic_peak_voltage": "V",
+    "ic_peak_width": "V"
+  },
+  "forbidden_predictors": [
+    "row_id",
+    "battery",
+    "cycle_id",
+    "cycle_ordinal",
+    "cycle_start",
+    "source_identifiers",
+    "split",
+    "soh",
+    "any_same_cycle_discharge_measurement"
+  ],
+  "prediction_cutoff": "end_of_available_current_charge",
+  "ordering_is_not_an_importance_ranking": true
+}

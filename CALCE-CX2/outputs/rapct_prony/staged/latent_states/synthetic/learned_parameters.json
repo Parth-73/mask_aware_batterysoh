@@ -1,0 +1,174 @@
+[
+  {
+    "domain": "synthetic_only",
+    "modes": 1,
+    "learnable": false,
+    "synthetic_penalty_mse": 4.1530688577040564e-06,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      77.45965576171875
+    ],
+    "normalized_amplitudes": [
+      1.0
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 1,
+    "learnable": true,
+    "synthetic_penalty_mse": 3.939930593332974e-06,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      88.70551300048828
+    ],
+    "normalized_amplitudes": [
+      1.0
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 2,
+    "learnable": false,
+    "synthetic_penalty_mse": 1.0300961548637133e-05,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      5.281680107116699,
+      1136.0023193359375
+    ],
+    "normalized_amplitudes": [
+      0.7911731004714966,
+      0.2088269293308258
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 2,
+    "learnable": true,
+    "synthetic_penalty_mse": 2.7385049523181992e-12,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      30.037132263183594,
+      300.3360900878906
+    ],
+    "normalized_amplitudes": [
+      0.6504334211349487,
+      0.34956657886505127
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 4,
+    "learnable": false,
+    "synthetic_penalty_mse": 7.824924352917151e-08,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      5.281680107116699,
+      31.645200729370117,
+      189.60214233398438,
+      1136.0023193359375
+    ],
+    "normalized_amplitudes": [
+      0.07646295428276062,
+      0.5110994577407837,
+      0.3536985516548157,
+      0.05873911827802658
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 4,
+    "learnable": true,
+    "synthetic_penalty_mse": 7.166758297927345e-10,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      29.850614547729492,
+      29.134803771972656,
+      263.18341064453125,
+      473.8991394042969
+    ],
+    "normalized_amplitudes": [
+      0.24981947243213654,
+      0.38997766375541687,
+      0.30053094029426575,
+      0.05967191606760025
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 8,
+    "learnable": false,
+    "synthetic_penalty_mse": 3.3340132432613245e-08,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      5.281680107116699,
+      11.376317977905273,
+      24.503677368164062,
+      52.77897262573242,
+      113.68167877197266,
+      244.86129760742188,
+      527.4114990234375,
+      1136.0023193359375
+    ],
+    "normalized_amplitudes": [
+      0.023758307099342346,
+      0.046914417296648026,
+      0.3886566460132599,
+      0.15314343571662903,
+      0.05217066779732704,
+      0.27879416942596436,
+      0.03561345860362053,
+      0.020948898047208786
+    ]
+  },
+  {
+    "domain": "synthetic_only",
+    "modes": 8,
+    "learnable": true,
+    "synthetic_penalty_mse": 2.416254141213159e-10,
+    "seed": 42,
+    "epochs": 400,
+    "time_range_source": "declared artificial signal; not CALCE rest distribution",
+    "experimental_capacity_recovery_evidence": false,
+    "timescales_s": [
+      30.108020782470703,
+      29.741348266601562,
+      29.483583450317383,
+      29.518688201904297,
+      254.85389709472656,
+      284.7740783691406,
+      307.7500915527344,
+      446.3703918457031
+    ],
+    "normalized_amplitudes": [
+      0.08655715733766556,
+      0.1754775047302246,
+      0.18520839512348175,
+      0.19659458100795746,
+      0.12236256152391434,
+      0.12198866903781891,
+      0.06855595111846924,
+      0.04325522109866142
+    ]
+  }
+]

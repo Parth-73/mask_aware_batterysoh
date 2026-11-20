@@ -1,0 +1,9 @@
+battery,cycle_ordinal,soh,reason
+CX2_34,202,0.9040420484573163,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_34,203,0.9369478796759624,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_34,302,0.8724266089633823,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_34,303,0.925043957158144,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_36,1608,0.6521378830500175,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_36,1609,0.618729774942839,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_38,1584,0.5321227497189899,adjacent_endpoint_of_SOHP_jump_gt_0.03
+CX2_38,1585,0.4964439699276708,adjacent_endpoint_of_SOHP_jump_gt_0.03

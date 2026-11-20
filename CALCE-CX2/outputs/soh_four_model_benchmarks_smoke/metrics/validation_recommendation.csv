@@ -1,0 +1,5 @@
+architecture,mean,std,count
+transformer,0.2210718467565605,,1
+cnn_pinn,0.5898493583362048,,1
+lstm_pinn,0.6222268091848252,,1
+lstm,0.7742174242857083,,1

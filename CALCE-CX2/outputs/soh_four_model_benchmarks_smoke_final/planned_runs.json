@@ -1,0 +1,58 @@
+[
+  {
+    "architecture": "lstm",
+    "feature_set": "five",
+    "length": 5,
+    "fold": "CX2_16",
+    "seed": 42,
+    "physics_weight": 0.0,
+    "reg_weight": 0.0,
+    "matched_targets": false,
+    "experiment": "primary",
+    "epochs": 2,
+    "device": "cuda",
+    "status": "smoke"
+  },
+  {
+    "architecture": "lstm_pinn",
+    "feature_set": "five",
+    "length": 5,
+    "fold": "CX2_16",
+    "seed": 42,
+    "physics_weight": 0.1,
+    "reg_weight": 0.1,
+    "matched_targets": false,
+    "experiment": "primary",
+    "epochs": 2,
+    "device": "cuda",
+    "status": "smoke"
+  },
+  {
+    "architecture": "transformer",
+    "feature_set": "five",
+    "length": 5,
+    "fold": "CX2_16",
+    "seed": 42,
+    "physics_weight": 0.0,
+    "reg_weight": 0.0,
+    "matched_targets": false,
+    "experiment": "primary",
+    "epochs": 2,
+    "device": "cuda",
+    "status": "smoke"
+  },
+  {
+    "architecture": "cnn_pinn",
+    "feature_set": "five",
+    "length": 5,
+    "fold": "CX2_16",
+    "seed": 42,
+    "physics_weight": 0.1,
+    "reg_weight": 0.1,
+    "matched_targets": false,
+    "experiment": "primary",
+    "epochs": 2,
+    "device": "cuda",
+    "status": "smoke"
+  }
+]

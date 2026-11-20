@@ -1,0 +1,12 @@
+{
+  "frozen_selection_sha256": "38ddd36809f7d5be0ad093a78b0444e576645327cb0b2dc65f212a7520d50ea5",
+  "run_ids": [
+    "B1_F3_L5_seed123",
+    "B1_F3_L5_seed2026",
+    "B1_F3_L5_seed42",
+    "B2_F1_L5_seed123",
+    "B2_F1_L5_seed2026",
+    "B2_F1_L5_seed42"
+  ],
+  "policy": "No training or model redesign after this marker; one prediction pass per selected checkpoint"
+}

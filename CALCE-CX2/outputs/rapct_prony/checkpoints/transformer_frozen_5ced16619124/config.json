@@ -1,0 +1,22 @@
+{
+  "pathway": "fusion",
+  "seed": 42,
+  "epochs": 20,
+  "patience": 20,
+  "batch_size": 32,
+  "lr": 0.0005,
+  "weight_decay": 0.001,
+  "channels": 32,
+  "embedding": 64,
+  "accumulation": 1,
+  "amp": false,
+  "workers": 0,
+  "outer": "CX2_38",
+  "validation": "CX2_36",
+  "label": "reduced_budget_temporal_pilot",
+  "initialization": "",
+  "stage": "transformer",
+  "sequence_length": 5,
+  "frozen": true,
+  "encoder_checkpoint": "outputs/rapct_prony/checkpoints/fusion_1779a8d18fc6/best.pt"
+}

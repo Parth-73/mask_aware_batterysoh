@@ -1,0 +1,114 @@
+{
+  "training": {
+    "learning_rate": 0.0005,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 20,
+    "gradient_clip": 1.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 5,
+    "scheduler_min_lr": 1e-06,
+    "early_stop_min_delta": 1e-06,
+    "hidden_size": 64,
+    "max_acquisition_gap_s": 3600.0,
+    "deterministic": true,
+    "device": "cuda"
+  },
+  "splits": {
+    "train": [
+      "CX2_16",
+      "CX2_33",
+      "CX2_34",
+      "CX2_35",
+      "CX2_37"
+    ],
+    "validation": [
+      "CX2_36"
+    ],
+    "test": [
+      "CX2_38"
+    ]
+  },
+  "features": {
+    "F1": [
+      "ic_peak_height",
+      "partial_charge_ah",
+      "partial_dv_dq"
+    ],
+    "F2": [
+      "ic_peak_height",
+      "partial_charge_ah",
+      "partial_dv_dq",
+      "ic_peak_area",
+      "ic_peak_voltage",
+      "ic_peak_width",
+      "cc_duration_s",
+      "cv_duration_s",
+      "dva_peak"
+    ],
+    "F3": [
+      "cc_duration_s",
+      "cv_duration_s",
+      "dva_peak",
+      "ic_peak_voltage",
+      "ic_peak_width"
+    ]
+  },
+  "architectures": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "sequences": [
+    5,
+    10,
+    20
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "target": "validated SOH fraction = discharge capacity Ah / 1.35 Ah; current-charge features estimate same-cycle eventual discharge SOH",
+  "cohort": "Common complete-case F2 feature union for every feature set; no imputation, no substitutions",
+  "continuity": "Same battery and single source sheet, strictly consecutive reconstructed ordinals, every record quality-validated, nonoverlapping recorded times, inter-cycle gap <=3600 s, no local resets",
+  "scale": "StandardScaler fitted only on common complete-case training-cycle features; target remains fractional and unscaled",
+  "selection": "Mean validation RMSE across all three seeds. Select feature set at B1/L5; architecture at L5; sequence for chosen architecture. Full architecture x sequence grid also reported.",
+  "test_policy": "Freeze all choices before evaluating selected and literature-comparison checkpoints once per seed. Test metrics never feed training or selection.",
+  "prior_feature_selection": "F3 is the user-prespecified provisional compact set; its earlier exploratory selection included CX2_36. Do not regard current validation as independent of that prior exploratory feature work. CX2_38 remained excluded.",
+  "literature": {
+    "doi": "10.3390/batteries12040115",
+    "url": "https://www.mdpi.com/2313-0105/12/4/115",
+    "settings": "F1, length 5, two LSTM layers, hidden 64; same AdamW/MSE benchmark settings. No physical loss or weight-generator branch.",
+    "paper_verification": "Predictor settings supplied in task; detailed paper verification recorded separately in literature_verification.json."
+  },
+  "source_hashes": {
+    "cx2_features_all.csv": "0c1b3fcb46c5c0e51bba0b1233e091e5d08d31ba42a997579662c3ee5a1d7fb1",
+    "cycle_quality.csv": "e5c79969c1e59124f1dc90a7fe70968d7f20267d0749c7af9ba6c65cc7c51663",
+    "rejected_cycles.csv": "d251e0c7049e39fbe20aa2cb7a2041f924cc334393311c4d9941687a65d4b3b7"
+  },
+  "scientific_code_hashes": {
+    "src\\models\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\models\\lstm_baselines.py": "2c82dd23367c96c26ebf6d31ab87c3e065db0b5fbf50b754cbef6fe9ad9ee9a5",
+    "src\\training\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\training\\config.py": "f5fa589cf377f57218005fcf9334adbac2e95c78f1d1bef6aa751b092ae78d92",
+    "src\\training\\dataset.py": "d8b24cae0f7d43fe417879644a6809b4084cb4f6a34f820a199122b2386bbe19",
+    "src\\training\\evaluate.py": "453714bb80170f5cea7ab9c265b4f51dfce7c4b4e8d0cc3828b6c202c0f6c27b",
+    "src\\training\\train_lstm.py": "90abe18487e0d3cbae06ddf9704329c9c32e68790049e3d9aa9806d7770958ff"
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_total_memory_mb": 12287.5,
+    "cublas_workspace": ":4096:8",
+    "tf32": false,
+    "cpu_threads": 2,
+    "nondeterminism": "Deterministic PyTorch algorithms and cuDNN requested; reproducibility across software/hardware versions is not guaranteed."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "domain": "synthetic_only",
+  "experimental_A5_A8": "unavailable",
+  "mode_ablation_runs": 8,
+  "single_mode_baseline_fitted": true,
+  "full_hybrid_interface_tested": true,
+  "true_synthetic_timescales_s": [
+    30.0,
+    300.0
+  ],
+  "timescale_bounds_source": "declared synthetic protocol, never validation/test CALCE statistics",
+  "interpretation": "Mathematical and numerical validation only; no experimental recovery or novelty claim."
+}
